@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loop — 隱私權政策 / Privacy Policy</title>
+<style>
+  :root{
+    --bg:#101418; --surface:#1a2128; --surface-2:#212a33;
+    --text:#e8edf2; --muted:#93a1ad; --line:#2c3640;
+    --accent:#5bd6a9; --accent-dim:#2e6b56;
+    --radius:14px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  body{
+    background:var(--bg); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","Noto Sans JP","PingFang TC","Hiragino Sans",Roboto,sans-serif;
+    line-height:1.8; font-size:16px;
+  }
+  .wrap{max-width:720px;margin:0 auto;padding:32px 20px 64px}
+  header.site{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:8px;flex-wrap:wrap}
+  .brand{display:flex;align-items:center;gap:12px}
+  .brand a{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
+  .brand svg{display:block}
+  .brand .name{font-weight:700;font-size:20px;letter-spacing:.02em}
+  .brand .by{font-size:12.5px;color:var(--muted)}
+  .lang{display:flex;gap:6px}
+  .lang button{
+    background:var(--surface);color:var(--muted);border:1px solid var(--line);
+    border-radius:999px;padding:6px 14px;font-size:13px;cursor:pointer;font-family:inherit;
+  }
+  .lang button[aria-pressed="true"]{background:var(--accent-dim);color:var(--text);border-color:var(--accent)}
+  .lang button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  nav.docs{display:flex;gap:18px;margin:14px 0 36px;font-size:13.5px;flex-wrap:wrap}
+  nav.docs a{color:var(--muted);text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px}
+  nav.docs a:hover{color:var(--text)}
+  nav.docs a[aria-current="page"]{color:var(--accent);border-bottom-color:var(--accent)}
+  h1{font-size:clamp(25px,5vw,32px);line-height:1.35;margin-bottom:8px;letter-spacing:.01em}
+  .lede{color:var(--muted);font-size:14px;margin-bottom:28px}
+  h2{font-size:18px;margin:34px 0 12px;display:flex;align-items:flex-start;gap:10px;line-height:1.5}
+  h2 .tick{width:8px;height:8px;border-radius:50%;background:var(--accent);flex:none;margin-top:.55em}
+  p{margin-bottom:12px}
+  p.sub{font-weight:700;margin-top:18px}
+  ul.plain{list-style:none;margin:4px 0 14px}
+  ul.plain li{padding-left:22px;position:relative;margin-bottom:8px}
+  ul.plain li::before{content:"";position:absolute;left:4px;top:.74em;width:7px;height:7px;border-radius:50%;background:var(--accent-dim)}
+  ul.plain ul{list-style:none;margin-top:8px}
+  ul.plain ul li{padding-left:20px;margin-bottom:6px}
+  ul.plain ul li::before{width:5px;height:5px;top:.8em;left:4px;background:var(--line);border:1px solid var(--accent-dim)}
+  a{color:var(--accent)}
+  footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:13.5px}
+  footer p{margin-bottom:4px}
+  section.i18n[hidden]{display:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="site">
+    <div class="brand">
+      <a href="./" aria-label="Loop">
+        <svg width="40" height="40" viewBox="0 0 40 40" role="img" aria-label="Loop">
+          <circle cx="20" cy="20" r="14" fill="none" stroke="#2c3640" stroke-width="5"/>
+          <path d="M20 6 a14 14 0 1 1 -13.4 18.2" fill="none" stroke="#5bd6a9" stroke-width="5" stroke-linecap="round"/>
+        </svg>
+        <div>
+          <div class="name">Loop</div>
+          <div class="by">by Lin Ching-Hung 林靖閎</div>
+        </div>
+      </a>
+    </div>
+    <nav class="lang" aria-label="Language">
+      <button type="button" data-lang="zh" aria-pressed="true">繁體中文</button>
+      <button type="button" data-lang="en" aria-pressed="false">English</button>
+      <button type="button" data-lang="ja" aria-pressed="false">日本語</button>
+    </nav>
+  </header>
+
+<section class="i18n" id="sec-zh" lang="zh-Hant">
+<nav class="docs" aria-label="Documents"><a href="privacy.html" aria-current="page">隱私權政策</a><a href="terms.html">服務條款</a><a href="delete-account.html">帳號與資料刪除</a></nav>
+<h1>隱私權政策</h1>
+<p class="lede">最終更新 / Last updated: 2026-06-12</p>
+<p>Loop 由個人開發者林靖閎營運。本隱私權政策說明 Loop（以下稱「本 App」或「我們」）如何收集、使用、儲存、分享與保護你的個人資料，以及你享有的權利。當你下載、存取或使用本 App，即表示你已閱讀並理解本政策。若你不同意本政策，請停止使用本 App。</p>
+<h2><span class="tick" aria-hidden="true"></span><span>1. 適用範圍</span></h2>
+<p>本政策適用於你透過本 App 使用我們服務時所進行的個人資料處理。本 App 可能連結或整合第三方服務（見第 6 節），這些第三方有其各自的隱私政策，不在本政策的適用範圍內。</p>
+<h2><span class="tick" aria-hidden="true"></span><span>2. 我們收集哪些資料</span></h2>
+<p class="sub">（a）你主動提供的資料</p>
+<ul class="plain">
+<li>習慣與打卡內容：你建立的習慣名稱、圖示、分類、目標、每日打卡與專注計時紀錄。
+</li>
+<li>個人檔案：你設定的暱稱、頭像（內建圖示或你上傳的相片）。
+</li>
+<li>帳號資料（選用）：若你選擇註冊/登入，我們會處理你的電子郵件位址以建立與驗證帳號。
+</li>
+<li>社交內容（選用）：若你使用好友功能，包含好友關係、加油（按讚）與動態紀錄。
+</li>
+<li>聯絡內容：你透過「意見回饋」寄給我們的信件內容。
+</li>
+</ul>
+<p class="sub">（b）裝置權限（皆需你授權，且僅在使用對應功能時）</p>
+<ul class="plain">
+<li>相片圖庫：僅在你主動選擇上傳頭像照片時才會存取；我們不會在背景掃描你的相簿。
+</li>
+<li>位置與通知：僅在你啟用「天氣提醒」功能時使用，詳見第 5 節。
+</li>
+</ul>
+<p class="sub">（c）自動處理的資料</p>
+<ul class="plain">
+<li>偏好設定：外觀（深/淺色）、雲端同步開關等，儲存在你的裝置本機。
+</li>
+<li>技術與連線紀錄：當你連線至我們的雲端服務時，我們委託的服務供應商（如 Supabase）會基於營運、安全與防止濫用之目的，代我們處理必要的技術資訊（例如 IP 位址、存取時間、裝置類型）。
+</li>
+</ul>
+<p class="sub">（d）你可自由選擇是否提供，及不提供之影響</p>
+<p>下列資料由你自由選擇是否提供；若不提供，將影響對應功能，但不影響本 App 的基本（本機）使用：</p>
+<ul class="plain">
+<li>電子郵件（選用）：不提供則無法註冊/登入，亦無法使用雲端同步與好友等社交功能。
+</li>
+<li>相片（選用）：不提供則無法上傳自訂頭像，將改用內建頭像圖示。
+</li>
+<li>位置（選用）：不提供則「天氣提醒」功能無法運作（見第 5 節）。
+</li>
+</ul>
+<p>除非你主動啟用「天氣提醒」功能並授權（見第 5 節），否則我們不會收集你的地理位置。我們不會收集你的通訊錄，也未整合任何第三方廣告或跨 App 追蹤 SDK。</p>
+<h2><span class="tick" aria-hidden="true"></span><span>3. 我們如何使用你的資料</span></h2>
+<p>我們基於以下目的處理你的資料：</p>
+<ul class="plain">
+<li>提供與維持本 App 的核心功能（記錄習慣、打卡、番茄鐘、統計）。
+</li>
+<li>在你登入並啟用雲端同步時，備份你的資料並支援跨裝置還原。
+</li>
+<li>提供好友、排行榜與加油等社交功能（依你的隱私設定）。
+</li>
+<li>產生打卡時的鼓勵訊息（見第 4 節）。
+</li>
+<li>於你啟用時，提供天氣提醒與推播通知（見第 5 節）。
+</li>
+<li>回覆你的意見回饋與支援需求。
+</li>
+<li>維護服務安全、偵測與防止濫用、遵循法律義務。
+</li>
+</ul>
+<p>若你位於歐洲經濟區（EEA）/英國，我們處理資料的法律依據包括：履行與你之間的服務契約、你的同意（如相簿存取、位置與通知、選用的雲端與社交功能）、以及我們維運服務與保障安全的正當利益。</p>
+<h2><span class="tick" aria-hidden="true"></span><span>4. AI 鼓勵訊息</span></h2>
+<p>當你完成打卡時，本 App 可能透過我們的伺服器函式，將少量與該次打卡相關的資訊（例如習慣名稱、連續天數、是否全部完成等情境參數）傳送給 AI 服務供應商 Anthropic 的 Claude 模型，以即時產生一句鼓勵訊息。</p>
+<ul class="plain">
+<li>我們不會傳送你的姓名、電子郵件或其他可直接識別你身分的資料。
+</li>
+<li>此功能僅用於產生當下的訊息；若無網路或處理失敗，會改用 App 內建的預設訊息。
+</li>
+</ul>
+<h2><span class="tick" aria-hidden="true"></span><span>5. 位置資訊與推播通知（天氣提醒）</span></h2>
+<p>本 App 提供選用的「天氣提醒」功能。此功能需你主動啟用並授權後才會運作；未啟用時，我們不會收集你的位置，也不會發送推播。</p>
+<p>當你啟用時：</p>
+<ul class="plain">
+<li>位置：在你授權的前提下，我們會於 App 開啟時（前景）取得你的概略位置，用於查詢當地天氣。我們不進行背景或持續的位置追蹤，也不會將你的位置用於本功能以外的目的。
+</li>
+<li>推播通知：在你允許通知權限後，我們會於早晨發送一則天氣與打卡提醒。為能定時推送，我們可能透過推播服務（如 Expo Push）儲存你裝置的推播識別碼（push token）。
+</li>
+<li>第三方：此功能可能使用推播服務與天氣資料供應商作為服務提供者（見第 6 節）；我們僅傳送查詢天氣所需的概略位置，不傳送可識別你身分的資料。
+</li>
+<li>你的控制：你可隨時在裝置的系統設定中關閉位置或通知權限，或在 App 內關閉此功能；關閉後此功能將停止運作。
+</li>
+</ul>
+<h2><span class="tick" aria-hidden="true"></span><span>6. 我們如何分享資料</span></h2>
+<p>我們不會販售你的個人資料。我們僅在下列情形分享資料：</p>
+<ul class="plain">
+<li>服務供應商（資料處理者）：
+<ul>
+<li>Supabase：提供帳號驗證、資料庫與檔案儲存（含你上傳的頭像照片），用於雲端同步與社交功能。</li>
+<p>　— Anthropic：依第 4 節所述，處理產生鼓勵訊息所需的少量情境資訊。</p>
+<p>　— 推播與天氣服務（僅在你啟用天氣提醒時）：依第 5 節所述，提供推播發送與天氣查詢。</p>
+</ul></li>
+</ul>
+<p>　這些供應商僅得依我們的指示、為提供服務之目的處理資料。</p>
+<ul class="plain">
+<li>其他使用者：當你使用好友功能時，你的暱稱、頭像與依你隱私設定（公開/不公開）所決定的統計資訊（如連續天數、完成率、名次），會對你的好友或排行榜上的使用者顯示。設為不公開時，僅顯示名次等必要資訊。
+</li>
+</ul>
+<ul class="plain">
+<li>法律要求：當法律、法院或主管機關要求，或為保護我們與使用者之權利與安全時，我們可能揭露必要資料。
+</li>
+</ul>
+<h2><span class="tick" aria-hidden="true"></span><span>7. 國際資料傳輸</span></h2>
+<p>我們的服務供應商可能將資料儲存或處理於你所在國家/地區以外的伺服器（例如，我們的雲端服務供應商 Supabase 可能將資料儲存於美國或其他地區的伺服器）。當發生跨境傳輸時，我們會依適用法律採取適當的保護措施。使用本 App 即表示你了解你的資料可能於其他地區受處理。</p>
+<h2><span class="tick" aria-hidden="true"></span><span>8. 資料保留</span></h2>
+<ul class="plain">
+<li>本機資料：習慣與打卡紀錄預設保存在你的裝置，直到你刪除或移除本 App。
+</li>
+<li>雲端資料：在你的帳號存續期間保留，以提供同步與社交功能；當你刪除帳號後，我們會在 30 日內完成刪除或匿名化（法律要求保留者除外）。
+</li>
+<li>你也可隨時在 App 內刪除個別習慣與個人檔案，或刪除整個帳號（見第 11 節）。
+</li>
+</ul>
+<h2><span class="tick" aria-hidden="true"></span><span>9. 資料安全</span></h2>
+<p>我們與服務供應商採取合理的技術與組織措施（例如傳輸加密、存取控制）以保護你的資料。惟請理解，沒有任何網路傳輸或儲存方式能保證百分之百安全；請妥善保管你的帳號登入資訊。</p>
+<p>若發生個人資料外洩或安全事故，我們將依台灣個人資料保護法及主管機關規定，於知悉後儘速通知受影響的使用者，並採取必要的補救措施。</p>
+<h2><span class="tick" aria-hidden="true"></span><span>10. 你的權利</span></h2>
+<p>依適用之資料保護法律（如台灣個人資料保護法、GDPR、CCPA），你可能享有下列權利：</p>
+<ul class="plain">
+<li>查詢或請求閱覽你的個人資料。
+</li>
+<li>請求製給你個人資料之複製本，或要求將其移轉（資料可攜）。
+</li>
+<li>請求補充或更正你的個人資料。
+</li>
+<li>請求停止蒐集、處理或利用你的個人資料，或限制、反對特定處理。
+</li>
+<li>請求刪除你的個人資料（「被遺忘權」）。
+</li>
+<li>隨時撤回你先前給予的同意。
+</li>
+<li>不因行使上述權利而受到差別待遇。
+</li>
+</ul>
+<p>你可直接在 App 內編輯或刪除習慣與個人檔案、登出帳號、關閉雲端同步，或刪除整個帳號（見第 11 節）；其他請求可透過第 15 節的信箱與我們聯絡。我們可能需要驗證你的身分後才能處理請求。</p>
+<h2><span class="tick" aria-hidden="true"></span><span>11. 帳號與資料刪除</span></h2>
+<p>登入為選用功能。你可以隨時登出，登出後本機仍保有你的資料。</p>
+<p>你可以直接在 App 內刪除帳號：前往「我的（設定）→ 帳號 → 刪除帳號」，經確認後，我們會刪除你的雲端帳號及與其關聯的個人資料（包含習慣、打卡、個人檔案、社交資料與已上傳的頭像照片），並在 30 日內完成。此操作無法復原。</p>
+<p>你也可以不需重新安裝本 App，透過我們的「帳號與資料刪除」網頁提出刪除請求：</p>
+<p><a href="https://qmo0318.github.io/delete-account.html">https://qmo0318.github.io/delete-account.html</a></p>
+<p>若你在操作上需要協助，亦可來信 <a href="mailto:loopapp18@gmail.com">loopapp18@gmail.com</a> 請求刪除。</p>
+<h2><span class="tick" aria-hidden="true"></span><span>12. 兒童隱私</span></h2>
+<p>本 App 並非以兒童為對象。我們不會在知情下收集 13 歲（或你所在地區法律規定之最低年齡）以下兒童的個人資料。若你認為兒童在未經同意下提供了個人資料，請與我們聯絡，我們將儘速刪除。</p>
+<h2><span class="tick" aria-hidden="true"></span><span>13. Cookie 與追蹤技術</span></h2>
+<p>本 App 不使用 Cookie，也未整合用於跨 App 或跨網站行為追蹤的廣告或分析技術。我們僅使用裝置本機儲存（如 AsyncStorage）來保存你的設定與離線資料。</p>
+<h2><span class="tick" aria-hidden="true"></span><span>14. 政策變更</span></h2>
+<p>我們可能不定期修訂本政策，並更新本頁面頂端的「最後更新」日期。重大變更時，我們會於變更生效前，以 App 內通知等適當方式告知你。若你不同意修訂後的政策，可停止使用本 App 並刪除帳號；你於變更生效後繼續使用本 App，即視為接受修訂後的政策。</p>
+<h2><span class="tick" aria-hidden="true"></span><span>15. 聯絡我們</span></h2>
+<p>本 App 之資料管理者（個人資料保護法所稱之非公務機關）為個人開發者林靖閎。若你對本隱私權政策或你的個人資料有任何疑問或請求，歡迎來信：</p>
+<p><a href="mailto:loopapp18@gmail.com">loopapp18@gmail.com</a></p>
+</section>
+<section class="i18n" id="sec-en" lang="en" hidden>
+<nav class="docs" aria-label="Documents"><a href="privacy.html" aria-current="page">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="delete-account.html">Account & Data Deletion</a></nav>
+<h1>Privacy Policy</h1>
+<p class="lede">最終更新 / Last updated: 2026-06-12</p>
+<p>Loop is operated by Lin Ching-Hung (林靖閎), an individual developer. This Privacy Policy explains how Loop (“the App” or “we”) collects, uses, stores, shares and protects your personal data, and the rights you have. By downloading, accessing or using the App, you confirm that you have read and understood this Policy. If you do not agree, please stop using the App.</p>
+<h2><span class="tick" aria-hidden="true"></span><span>1. Scope</span></h2>
+<p>This Policy applies to the processing of personal data when you use our services through the App. The App may link to or integrate third-party services (see Section 6), which have their own privacy policies and are not covered by this Policy.</p>
+<h2><span class="tick" aria-hidden="true"></span><span>2. Data we collect</span></h2>
+<p class="sub">(a) Data you provide</p>
+<ul class="plain">
+<li>Habits and check-ins: the habit names, icons, categories, goals, daily check-ins and focus-timer records you create.
+</li>
+<li>Profile: the nickname and avatar you set (a built-in icon or a photo you upload).
+</li>
+<li>Account data (optional): if you choose to sign up / sign in, we process your email address to create and verify your account.
+</li>
+<li>Social content (optional): if you use friend features, this includes friend relationships, cheers (likes) and activity records.
+</li>
+<li>Contact content: the contents of messages you send us via “Send feedback.”
+</li>
+</ul>
+<p class="sub">(b) Device permissions (each requires your authorization, and only when using the relevant feature)</p>
+<ul class="plain">
+<li>Photo library: accessed only when you actively choose to upload an avatar photo; we do not scan your library in the background.
+</li>
+<li>Location and notifications: used only when you enable the “Weather reminder” feature; see Section 5.
+</li>
+</ul>
+<p class="sub">(c) Automatically processed data</p>
+<ul class="plain">
+<li>Preferences: appearance (dark/light), cloud-sync toggle and the like, stored locally on your device.
+</li>
+<li>Technical and connection logs: when you connect to our cloud services, our service providers (such as Supabase) process the necessary technical information (e.g. IP address, access time, device type) on our behalf for operation, security and abuse prevention.
+</li>
+</ul>
+<p class="sub">(d) Optional data and the impact of not providing it</p>
+<p>The following are optional; not providing them affects the related feature but not the basic (local) use of the App:</p>
+<ul class="plain">
+<li>Email (optional): without it you cannot sign up / sign in, or use cloud sync and social features such as friends.
+</li>
+<li>Photo (optional): without it you cannot upload a custom avatar; a built-in avatar icon is used instead.
+</li>
+<li>Location (optional): without it the “Weather reminder” feature cannot work (see Section 5).
+</li>
+</ul>
+<p>Unless you actively enable and authorize the “Weather reminder” feature (see Section 5), we do not collect your location. We do not collect your contacts, and we do not integrate any third-party advertising or cross-app tracking SDKs.</p>
+<h2><span class="tick" aria-hidden="true"></span><span>3. How we use your data</span></h2>
+<p>We process your data for the following purposes:</p>
+<ul class="plain">
+<li>To provide and maintain the App’s core features (recording habits, check-ins, the Pomodoro timer, stats).
+</li>
+<li>When you sign in and enable cloud sync, to back up your data and support cross-device restore.
+</li>
+<li>To provide social features such as friends, leaderboards and cheers (according to your privacy settings).
+</li>
+<li>To generate encouragement messages on check-in (see Section 4).
+</li>
+<li>To provide weather reminders and push notifications when you enable them (see Section 5).
+</li>
+<li>To respond to your feedback and support requests.
+</li>
+<li>To maintain service security, detect and prevent abuse, and comply with legal obligations.
+</li>
+</ul>
+<p>If you are in the European Economic Area (EEA) / UK, our legal bases for processing include: performance of the service contract with you, your consent (e.g. photo-library access, location and notifications, optional cloud and social features), and our legitimate interests in operating and securing the service.</p>
+<h2><span class="tick" aria-hidden="true"></span><span>4. AI encouragement messages</span></h2>
+<p>When you complete a check-in, the App may, via our server function, send a small amount of context related to that check-in (e.g. the habit name, streak count, whether everything is done) to the AI provider Anthropic’s Claude model to generate a one-line encouragement message in real time.</p>
+<ul class="plain">
+<li>We do not send your name, email or other data that directly identifies you.
+</li>
+<li>This feature is only used to generate the message at that moment; if there is no network or processing fails, a built-in default message is used instead.
+</li>
+</ul>
+<h2><span class="tick" aria-hidden="true"></span><span>5. Location and push notifications (Weather reminder)</span></h2>
+<p>The App offers an optional “Weather reminder” feature. It works only after you actively enable and authorize it; when not enabled, we do not collect your location or send push notifications.</p>
+<p>When you enable it:</p>
+<ul class="plain">
+<li>Location: with your authorization, we obtain your approximate location when the App is open (foreground) to look up local weather. We do not perform background or continuous location tracking, nor use your location for any purpose beyond this feature.
+</li>
+<li>Push notifications: after you allow notification permission, we send a morning weather and check-in reminder. To deliver it on schedule, we may store your device’s push token via a push service (such as Expo Push).
+</li>
+<li>Third parties: this feature may use a push service and a weather data provider as service providers (see Section 6); we only send the approximate location needed to look up weather, not data that identifies you.
+</li>
+<li>Your control: you can turn off location or notification permission in your device system settings at any time, or disable the feature in the App; once disabled, the feature stops working.
+</li>
+</ul>
+<h2><span class="tick" aria-hidden="true"></span><span>6. How we share data</span></h2>
+<p>We do not sell your personal data. We share data only in the following cases:</p>
+<ul class="plain">
+<li>Service providers (data processors):
+<ul>
+<li>Supabase: provides account authentication, database and file storage (including avatar photos you upload), used for cloud sync and social features.</li>
+<p>　— Anthropic: as described in Section 4, processes the small amount of context needed to generate encouragement messages.</p>
+<p>　— Push and weather services (only when you enable weather reminders): as described in Section 5, provide push delivery and weather lookups.</p>
+</ul></li>
+</ul>
+<p>　These providers may process data only on our instructions and for the purpose of providing the service.</p>
+<ul class="plain">
+<li>Other users: when you use friend features, your nickname, avatar and the statistics determined by your privacy setting (public/private) — such as streak, completion rate and rank — are shown to your friends or users on the leaderboard. When set to private, only essential information such as rank is shown.
+</li>
+</ul>
+<ul class="plain">
+<li>Legal requirements: we may disclose necessary data when required by law, courts or authorities, or to protect the rights and safety of us and our users.
+</li>
+</ul>
+<h2><span class="tick" aria-hidden="true"></span><span>7. International data transfers</span></h2>
+<p>Our service providers may store or process data on servers outside your country/region (for example, our cloud provider Supabase may store data on servers in the United States or other regions). Where cross-border transfers occur, we apply appropriate safeguards in accordance with applicable law. By using the App, you understand that your data may be processed in other regions.</p>
+<h2><span class="tick" aria-hidden="true"></span><span>8. Data retention</span></h2>
+<ul class="plain">
+<li>Local data: habits and check-in records are kept on your device by default until you delete them or remove the App.
+</li>
+<li>Cloud data: retained for the life of your account to provide sync and social features; after you delete your account, we complete deletion or anonymization within 30 days (except where retention is required by law).
+</li>
+<li>You can also delete individual habits and your profile in the App at any time, or delete your entire account (see Section 11).
+</li>
+</ul>
+<h2><span class="tick" aria-hidden="true"></span><span>9. Data security</span></h2>
+<p>We and our service providers apply reasonable technical and organizational measures (such as encryption in transit and access controls) to protect your data. Please understand that no method of transmission or storage is 100% secure; keep your account credentials safe.</p>
+<p>If a personal data breach or security incident occurs, we will notify affected users as soon as practicable in accordance with Taiwan’s Personal Data Protection Act and the requirements of the competent authority, and take necessary remedial measures.</p>
+<h2><span class="tick" aria-hidden="true"></span><span>10. Your rights</span></h2>
+<p>Under applicable data protection laws (such as Taiwan’s Personal Data Protection Act, GDPR, CCPA), you may have the following rights:</p>
+<ul class="plain">
+<li>Access, correct or update your personal data.
+</li>
+<li>Request deletion of your personal data (the “right to be forgotten”).
+</li>
+<li>Request a copy of your data or have it transferred (data portability).
+</li>
+<li>Restrict or object to certain processing, and withdraw consent you previously gave at any time.
+</li>
+<li>Not be subject to discrimination for exercising these rights.
+</li>
+</ul>
+<p>You can edit or delete habits and your profile, sign out, turn off cloud sync, or delete your entire account (see Section 11) directly in the App; for other requests, contact us via the email in Section 15. We may need to verify your identity before processing a request.</p>
+<h2><span class="tick" aria-hidden="true"></span><span>11. Account and data deletion</span></h2>
+<p>Signing in is optional. You can sign out at any time; after signing out your data still remains locally.</p>
+<p>You can delete your account directly in the App: go to “Me (Settings) → Account → Delete account.” After confirmation, we delete your cloud account and the personal data associated with it (including habits, check-ins, profile, social data and uploaded avatar photo), completed within 30 days. This action cannot be undone.</p>
+<p>You can also request account and data deletion without reinstalling the App via our account &amp; data deletion page:</p>
+<p><a href="https://qmo0318.github.io/delete-account.html">https://qmo0318.github.io/delete-account.html</a></p>
+<p>If you need help, you may also email <a href="mailto:loopapp18@gmail.com">loopapp18@gmail.com</a> to request deletion.</p>
+<h2><span class="tick" aria-hidden="true"></span><span>12. Children’s privacy</span></h2>
+<p>The App is not directed at children. We do not knowingly collect personal data from children under 13 (or the minimum age required by law in your region). If you believe a child has provided personal data without consent, please contact us and we will delete it promptly.</p>
+<h2><span class="tick" aria-hidden="true"></span><span>13. Cookies and tracking</span></h2>
+<p>The App does not use cookies, nor does it integrate advertising or analytics technologies for cross-app or cross-site behavioral tracking. We only use local device storage (such as AsyncStorage) to keep your settings and offline data.</p>
+<h2><span class="tick" aria-hidden="true"></span><span>14. Changes to this Policy</span></h2>
+<p>We may revise this Policy from time to time and update the “Last updated” date at the top of this page. For material changes, we will notify you by appropriate means (such as an in-app notice) before the changes take effect. If you do not agree with the revised Policy, you may stop using the App and delete your account; your continued use of the App after the changes take effect constitutes acceptance of the revised Policy.</p>
+<h2><span class="tick" aria-hidden="true"></span><span>15. Contact us</span></h2>
+<p>The data controller of this App (the “non-government agency” under the Personal Data Protection Act) is the individual developer Lin Ching-Hung (林靖閎). If you have any questions or requests about this Privacy Policy or your personal data, please email:</p>
+<p><a href="mailto:loopapp18@gmail.com">loopapp18@gmail.com</a></p>
+</section>
+<section class="i18n" id="sec-ja" lang="ja" hidden>
+<nav class="docs" aria-label="Documents"><a href="privacy.html" aria-current="page">プライバシーポリシー</a><a href="terms.html">利用規約</a><a href="delete-account.html">アカウントとデータの削除</a></nav>
+<h1>プライバシーポリシー</h1>
+<p class="lede">最終更新 / Last updated: 2026-06-12</p>
+<p>Loopは個人開発者の林靖閎が運営しています。本プライバシーポリシーは、Loop（以下「本アプリ」または「当社」）があなたの個人データをどのように収集・利用・保存・共有・保護するか、およびあなたの権利について説明します。本アプリをダウンロード・アクセス・利用した時点で、本ポリシーを読み理解したものとみなします。同意いただけない場合は、本アプリの利用を中止してください。</p>
+<h2><span class="tick" aria-hidden="true"></span><span>1. 適用範囲</span></h2>
+<p>本ポリシーは、あなたが本アプリを通じて当社のサービスを利用する際の個人データの取扱いに適用されます。本アプリは第三者サービスにリンク・連携する場合があり（第6条参照）、それらには各自のプライバシーポリシーがあり、本ポリシーの適用範囲外です。</p>
+<h2><span class="tick" aria-hidden="true"></span><span>2. 収集するデータ</span></h2>
+<p class="sub">（a）あなたが提供するデータ</p>
+<ul class="plain">
+<li>習慣と記録：作成した習慣名・アイコン・カテゴリ・目標・毎日の記録・集中計測の記録。
+</li>
+<li>プロフィール：設定したニックネーム・アバター（内蔵アイコンまたはアップロードした写真）。
+</li>
+<li>アカウント情報（任意）：登録/ログインを選んだ場合、アカウント作成と認証のためメールアドレスを処理します。
+</li>
+<li>ソーシャル情報（任意）：フレンド機能を使う場合、フレンド関係・応援（いいね）・アクティビティ記録を含みます。
+</li>
+<li>連絡内容：「フィードバック」から送られたメールの内容。
+</li>
+</ul>
+<p class="sub">（b）端末の権限（いずれも許可が必要で、該当機能の利用時のみ）</p>
+<ul class="plain">
+<li>写真ライブラリ：アバター写真をアップロードする操作をしたときのみアクセスします。バックグラウンドでライブラリをスキャンしません。
+</li>
+<li>位置と通知：「天気リマインダー」機能を有効にしたときのみ使用します（第5条参照）。
+</li>
+</ul>
+<p class="sub">（c）自動的に処理されるデータ</p>
+<ul class="plain">
+<li>設定：外観（ダーク/ライト）、クラウド同期のオン/オフなど。端末本体に保存されます。
+</li>
+<li>技術・接続ログ：当社のクラウドに接続する際、当社が委託するサービス提供者（Supabase など）が、運用・セキュリティ・不正防止の目的で、必要な技術情報（IPアドレス、アクセス時刻、端末種別など）を当社に代わって処理します。
+</li>
+</ul>
+<p class="sub">（d）任意で提供するデータと、提供しない場合の影響</p>
+<p>以下は任意です。提供しない場合は該当機能に影響しますが、本アプリの基本的な（ローカルの）利用には影響しません：</p>
+<ul class="plain">
+<li>メール（任意）：提供しないと登録/ログインができず、クラウド同期やフレンドなどのソーシャル機能も利用できません。
+</li>
+<li>写真（任意）：提供しないとカスタムアバターをアップロードできず、内蔵アバターを使用します。
+</li>
+<li>位置（任意）：提供しないと「天気リマインダー」機能が動作しません（第5条参照）。
+</li>
+</ul>
+<p>「天気リマインダー」を自ら有効にして許可しない限り（第5条参照）、位置情報は収集しません。連絡先も収集せず、第三者の広告やアプリ横断トラッキングのSDKも組み込んでいません。</p>
+<h2><span class="tick" aria-hidden="true"></span><span>3. データの利用目的</span></h2>
+<p>以下の目的でデータを処理します：</p>
+<ul class="plain">
+<li>本アプリの中核機能（習慣の記録・チェックイン・ポモドーロ・統計）の提供と維持。
+</li>
+<li>ログインしクラウド同期を有効にした場合、データのバックアップと機種間の復元のサポート。
+</li>
+<li>フレンド・ランキング・応援などのソーシャル機能の提供（プライバシー設定に従う）。
+</li>
+<li>チェックイン時の励ましメッセージの生成（第4条参照）。
+</li>
+<li>あなたが有効にした場合、天気リマインダーとプッシュ通知の提供（第5条参照）。
+</li>
+<li>フィードバックやサポート対応。
+</li>
+<li>サービスの安全維持、不正の検知・防止、法的義務の遵守。
+</li>
+</ul>
+<p>あなたが欧州経済領域（EEA）/英国にいる場合、処理の法的根拠には、あなたとのサービス契約の履行、あなたの同意（ライブラリへのアクセス、位置と通知、任意のクラウド・ソーシャル機能など）、ならびにサービスの運用と安全確保に関する正当な利益が含まれます。</p>
+<h2><span class="tick" aria-hidden="true"></span><span>4. AI励ましメッセージ</span></h2>
+<p>チェックインを完了したとき、本アプリはサーバー関数を通じて、その記録に関連する少量の情報（習慣名、連続日数、すべて完了したかなどの状況パラメータ）をAI提供者 Anthropic の Claude モデルに送り、励ましの一言をリアルタイムで生成する場合があります。</p>
+<ul class="plain">
+<li>氏名・メール・その他あなたを直接特定できるデータは送信しません。
+</li>
+<li>この機能はその場のメッセージ生成のみに使われ、ネットワークがない/処理に失敗した場合はアプリ内蔵の既定メッセージを使います。
+</li>
+</ul>
+<h2><span class="tick" aria-hidden="true"></span><span>5. 位置情報とプッシュ通知（天気リマインダー）</span></h2>
+<p>本アプリは任意の「天気リマインダー」機能を提供します。自ら有効にして許可した後にのみ動作し、有効にしていない間は位置の収集もプッシュの送信も行いません。</p>
+<p>有効にした場合：</p>
+<ul class="plain">
+<li>位置：許可を前提に、アプリ起動時（フォアグラウンド）におおよその位置を取得し、現地の天気を調べます。バックグラウンドや継続的な位置追跡は行わず、本機能以外の目的には使いません。
+</li>
+<li>プッシュ通知：通知の許可後、朝に天気とチェックインのリマインダーを送ります。定時配信のため、プッシュサービス（Expo Push など）を通じて端末のプッシュトークンを保存する場合があります。
+</li>
+<li>第三者：本機能はプッシュサービスと天気データ提供者をサービス提供者として利用する場合があります（第6条参照）。天気の照会に必要なおおよその位置のみを送り、あなたを特定できるデータは送りません。
+</li>
+<li>あなたの制御：端末のシステム設定で位置や通知の許可をいつでもオフにでき、アプリ内で本機能を無効にもできます。無効にすると本機能は停止します。
+</li>
+</ul>
+<h2><span class="tick" aria-hidden="true"></span><span>6. データの共有</span></h2>
+<p>当社はあなたの個人データを販売しません。以下の場合にのみ共有します：</p>
+<ul class="plain">
+<li>サービス提供者（データ処理者）：
+<ul>
+<li>Supabase：アカウント認証、データベース、ファイルストレージ（アップロードしたアバター写真を含む）を提供し、クラウド同期とソーシャル機能に使用。</li>
+<p>　— Anthropic：第4条のとおり、励ましメッセージ生成に必要な少量の状況情報を処理。</p>
+<p>　— プッシュ・天気サービス（天気リマインダーを有効にした場合のみ）：第5条のとおり、プッシュ配信と天気照会を提供。</p>
+</ul></li>
+</ul>
+<p>　これらの提供者は、当社の指示に従い、サービス提供の目的のためにのみデータを処理できます。</p>
+<ul class="plain">
+<li>他の利用者：フレンド機能を使うと、あなたのニックネーム・アバター、およびプライバシー設定（公開/非公開）に応じた統計情報（連続日数・達成率・順位など）が、フレンドやランキング上の利用者に表示されます。非公開に設定した場合は、順位など必要な情報のみ表示されます。
+</li>
+</ul>
+<ul class="plain">
+<li>法的要請：法律・裁判所・当局の要請がある場合、または当社と利用者の権利と安全を守るために、必要なデータを開示する場合があります。
+</li>
+</ul>
+<h2><span class="tick" aria-hidden="true"></span><span>7. データの国際移転</span></h2>
+<p>当社のサービス提供者は、あなたの国/地域外のサーバーにデータを保存または処理する場合があります（例えば、当社のクラウド提供者 Supabase は、米国やその他の地域のサーバーにデータを保存する場合があります）。越境移転が生じる場合、適用法に従い適切な保護措置を講じます。本アプリを利用することで、あなたのデータが他の地域で処理されうることを理解したものとみなします。</p>
+<h2><span class="tick" aria-hidden="true"></span><span>8. データの保持</span></h2>
+<ul class="plain">
+<li>ローカルデータ：習慣と記録は、削除するか本アプリを削除するまで、既定で端末に保存されます。
+</li>
+<li>クラウドデータ：同期とソーシャル機能を提供するため、アカウントが存続する間保持します。アカウントを削除した場合、30日以内に削除または匿名化を完了します（法律で保持が求められる場合を除く）。
+</li>
+<li>アプリ内で個別の習慣やプロフィールをいつでも削除でき、アカウント全体を削除することもできます（第11条参照）。
+</li>
+</ul>
+<h2><span class="tick" aria-hidden="true"></span><span>9. データのセキュリティ</span></h2>
+<p>当社とサービス提供者は、データ保護のため合理的な技術的・組織的措置（通信の暗号化、アクセス制御など）を講じます。ただし、いかなる通信・保存方法も100%安全とは保証できません。アカウントのログイン情報は適切に管理してください。</p>
+<p>個人データの漏えいまたはセキュリティ事故が発生した場合、当社は台湾の個人資料保護法および主管官庁の規定に従い、把握後すみやかに影響を受ける利用者に通知し、必要な是正措置を講じます。</p>
+<h2><span class="tick" aria-hidden="true"></span><span>10. あなたの権利</span></h2>
+<p>適用されるデータ保護法（台湾の個人資料保護法、GDPR、CCPA など）に基づき、以下の権利を有する場合があります：</p>
+<ul class="plain">
+<li>個人データの閲覧・訂正・更新。
+</li>
+<li>個人データの削除の要請（「忘れられる権利」）。
+</li>
+<li>データの写しの取得、または移転の要請（データポータビリティ）。
+</li>
+<li>特定の処理の制限・異議、過去に与えた同意の随時撤回。
+</li>
+<li>これらの権利の行使により差別的取扱いを受けないこと。
+</li>
+</ul>
+<p>アプリ内で習慣やプロフィールの編集・削除、ログアウト、クラウド同期のオフ、アカウント全体の削除（第11条参照）が直接できます。その他の要請は第15条のメールでご連絡ください。要請の処理前に本人確認が必要な場合があります。</p>
+<h2><span class="tick" aria-hidden="true"></span><span>11. アカウントとデータの削除</span></h2>
+<p>ログインは任意です。いつでもログアウトでき、ログアウト後もデータは端末に残ります。</p>
+<p>アプリ内で直接アカウントを削除できます：「マイ（設定）→ アカウント → アカウント削除」へ進み、確認後、当社はあなたのクラウドアカウントおよびそれに紐づく個人データ（習慣・記録・プロフィール・ソーシャル情報・アップロードしたアバター写真を含む）を削除し、30日以内に完了します。この操作は取り消せません。</p>
+<p>本アプリを再インストールしなくても、当社の「アカウントとデータの削除」ページから削除をご依頼いただけます：</p>
+<p><a href="https://qmo0318.github.io/delete-account.html">https://qmo0318.github.io/delete-account.html</a></p>
+<p>操作にサポートが必要な場合は、<a href="mailto:loopapp18@gmail.com">loopapp18@gmail.com</a> まで削除をご依頼いただくこともできます。</p>
+<h2><span class="tick" aria-hidden="true"></span><span>12. 子どものプライバシー</span></h2>
+<p>本アプリは子どもを対象としていません。13歳未満（またはお住まいの地域の法律が定める最低年齢未満）の子どもの個人データを、知りながら収集することはありません。子どもが同意なく個人データを提供したと思われる場合はご連絡ください。速やかに削除します。</p>
+<h2><span class="tick" aria-hidden="true"></span><span>13. Cookie とトラッキング技術</span></h2>
+<p>本アプリは Cookie を使用せず、アプリ横断・サイト横断の行動トラッキングのための広告・分析技術も組み込んでいません。設定とオフラインデータの保存には、端末本体のストレージ（AsyncStorage など）のみを使用します。</p>
+<h2><span class="tick" aria-hidden="true"></span><span>14. ポリシーの変更</span></h2>
+<p>本ポリシーは随時改定し、本ページ上部の「最終更新」日を更新する場合があります。重要な変更については、発効前にアプリ内通知などの適切な方法でお知らせします。改定後のポリシーに同意いただけない場合は、本アプリの利用を中止し、アカウントを削除できます。変更の発効後も本アプリを使い続けた場合、改定後のポリシーに同意したものとみなします。</p>
+<h2><span class="tick" aria-hidden="true"></span><span>15. お問い合わせ</span></h2>
+<p>本アプリのデータ管理者（個人資料保護法上の非公務機関）は、個人開発者の林靖閎です。本プライバシーポリシーやあなたの個人データについてご質問・ご要請があれば、以下までご連絡ください：</p>
+<p><a href="mailto:loopapp18@gmail.com">loopapp18@gmail.com</a></p>
+</section>
+  <footer>
+    <p>Loop — 開發者 Developer: Lin Ching-Hung（林靖閎）</p>
+    <p>聯絡 Contact: <a href="mailto:loopapp18@gmail.com">loopapp18@gmail.com</a></p>
+  </footer>
+</div>
+
+<script>
+(function(){
+  var btns = document.querySelectorAll('.lang button');
+  var secs = { zh: document.getElementById('sec-zh'), en: document.getElementById('sec-en'), ja: document.getElementById('sec-ja') };
+  function show(lang){
+    Object.keys(secs).forEach(function(k){ secs[k].hidden = (k !== lang); });
+    btns.forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.lang === lang)); });
+    document.documentElement.lang = lang === 'zh' ? 'zh-Hant' : lang;
+  }
+  btns.forEach(function(b){ b.addEventListener('click', function(){ show(b.dataset.lang); }); });
+  var nav = (navigator.language || 'zh').toLowerCase();
+  if (nav.indexOf('ja') === 0) show('ja');
+  else if (nav.indexOf('zh') === 0) show('zh');
+  else show('en');
+})();
+</script>
+
+</body>
+</html>

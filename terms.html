@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loop — 服務條款 / Terms of Service</title>
+<style>
+  :root{
+    --bg:#101418; --surface:#1a2128; --surface-2:#212a33;
+    --text:#e8edf2; --muted:#93a1ad; --line:#2c3640;
+    --accent:#5bd6a9; --accent-dim:#2e6b56;
+    --radius:14px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  body{
+    background:var(--bg); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","Noto Sans JP","PingFang TC","Hiragino Sans",Roboto,sans-serif;
+    line-height:1.8; font-size:16px;
+  }
+  .wrap{max-width:720px;margin:0 auto;padding:32px 20px 64px}
+  header.site{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:8px;flex-wrap:wrap}
+  .brand{display:flex;align-items:center;gap:12px}
+  .brand a{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
+  .brand svg{display:block}
+  .brand .name{font-weight:700;font-size:20px;letter-spacing:.02em}
+  .brand .by{font-size:12.5px;color:var(--muted)}
+  .lang{display:flex;gap:6px}
+  .lang button{
+    background:var(--surface);color:var(--muted);border:1px solid var(--line);
+    border-radius:999px;padding:6px 14px;font-size:13px;cursor:pointer;font-family:inherit;
+  }
+  .lang button[aria-pressed="true"]{background:var(--accent-dim);color:var(--text);border-color:var(--accent)}
+  .lang button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  nav.docs{display:flex;gap:18px;margin:14px 0 36px;font-size:13.5px;flex-wrap:wrap}
+  nav.docs a{color:var(--muted);text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px}
+  nav.docs a:hover{color:var(--text)}
+  nav.docs a[aria-current="page"]{color:var(--accent);border-bottom-color:var(--accent)}
+  h1{font-size:clamp(25px,5vw,32px);line-height:1.35;margin-bottom:8px;letter-spacing:.01em}
+  .lede{color:var(--muted);font-size:14px;margin-bottom:28px}
+  h2{font-size:18px;margin:34px 0 12px;display:flex;align-items:flex-start;gap:10px;line-height:1.5}
+  h2 .tick{width:8px;height:8px;border-radius:50%;background:var(--accent);flex:none;margin-top:.55em}
+  p{margin-bottom:12px}
+  p.sub{font-weight:700;margin-top:18px}
+  ul.plain{list-style:none;margin:4px 0 14px}
+  ul.plain li{padding-left:22px;position:relative;margin-bottom:8px}
+  ul.plain li::before{content:"";position:absolute;left:4px;top:.74em;width:7px;height:7px;border-radius:50%;background:var(--accent-dim)}
+  ul.plain ul{list-style:none;margin-top:8px}
+  ul.plain ul li{padding-left:20px;margin-bottom:6px}
+  ul.plain ul li::before{width:5px;height:5px;top:.8em;left:4px;background:var(--line);border:1px solid var(--accent-dim)}
+  a{color:var(--accent)}
+  footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:13.5px}
+  footer p{margin-bottom:4px}
+  section.i18n[hidden]{display:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="site">
+    <div class="brand">
+      <a href="./" aria-label="Loop">
+        <svg width="40" height="40" viewBox="0 0 40 40" role="img" aria-label="Loop">
+          <circle cx="20" cy="20" r="14" fill="none" stroke="#2c3640" stroke-width="5"/>
+          <path d="M20 6 a14 14 0 1 1 -13.4 18.2" fill="none" stroke="#5bd6a9" stroke-width="5" stroke-linecap="round"/>
+        </svg>
+        <div>
+          <div class="name">Loop</div>
+          <div class="by">by Lin Ching-Hung 林靖閎</div>
+        </div>
+      </a>
+    </div>
+    <nav class="lang" aria-label="Language">
+      <button type="button" data-lang="zh" aria-pressed="true">繁體中文</button>
+      <button type="button" data-lang="en" aria-pressed="false">English</button>
+      <button type="button" data-lang="ja" aria-pressed="false">日本語</button>
+    </nav>
+  </header>
+
+<section class="i18n" id="sec-zh" lang="zh-Hant">
+<nav class="docs" aria-label="Documents"><a href="privacy.html">隱私權政策</a><a href="terms.html" aria-current="page">服務條款</a><a href="delete-account.html">帳號與資料刪除</a></nav>
+<h1>服務條款</h1>
+<p class="lede">最終更新 / Last updated: 2026-06-12</p>
+<p>歡迎使用 Loop（以下稱「本 App」）。本服務條款（以下稱「本條款」）為你與本 App 營運者個人開發者林靖閎（以下稱「我們」）之間具法律拘束力的協議。當你下載、安裝、存取或使用本 App，即表示你已閱讀、理解並同意接受本條款及《隱私權政策》。若你不同意，請勿使用本 App。</p>
+<h2><span class="tick" aria-hidden="true"></span><span>1. 服務說明</span></h2>
+<p>本 App 提供習慣養成、打卡紀錄、番茄鐘專注計時、統計回顧、AI 鼓勵訊息，以及好友與排行榜等社交功能，協助你建立並維持日常習慣。我們可能不定期新增、修改或移除部分功能。</p>
+<h2><span class="tick" aria-hidden="true"></span><span>2. 使用資格</span></h2>
+<p>你須年滿 13 歲（或你所在地區法律規定之最低年齡）方可使用本 App。若你未滿法律規定之成年年齡，應在法定代理人同意並監督下使用。你使用本 App 即表示你符合上述資格。</p>
+<h2><span class="tick" aria-hidden="true"></span><span>3. 帳號</span></h2>
+<ul class="plain">
+<li>登入為選用功能；未登入亦可在本機離線使用本 App。
+</li>
+<li>若你註冊帳號，你應提供正確資訊，並妥善保管你的登入憑證。
+</li>
+<li>你應對在你帳號下發生的所有活動負責。如發現帳號遭未經授權使用，請立即與我們聯絡。
+</li>
+</ul>
+<h2><span class="tick" aria-hidden="true"></span><span>4. 使用授權與限制</span></h2>
+<p>在你遵守本條款的前提下，我們授予你個人、非專屬、不可轉讓、可撤回的授權，於你擁有或控制的裝置上，為個人、非商業目的使用本 App。</p>
+<p>你不得：</p>
+<ul class="plain">
+<li>對本 App 進行還原工程、反編譯、拆解或試圖取得其原始碼。
+</li>
+<li>複製、散布、出租、出借、轉售或商業利用本 App。
+</li>
+<li>以自動化方式大量存取、干擾或破壞服務，或規避任何技術限制。
+</li>
+<li>從事違法、侵害他人權利、騷擾、或散布不當內容之行為（包含在社交功能中）。
+</li>
+</ul>
+<p>社交功能中的內容管理：你可以在 App 內檢舉不當內容或封鎖其他使用者。若內容或行為違反本條款，我們得移除相關內容，並限制、暫停或終止相關帳號使用社交功能。</p>
+<h2><span class="tick" aria-hidden="true"></span><span>5. 你的內容</span></h2>
+<p>你在本 App 中建立或上傳的內容（例如習慣、打卡紀錄、暱稱、頭像照片）仍屬於你。為提供與運作服務（例如雲端同步、跨裝置還原、向你的好友顯示），你授予我們在必要範圍內儲存、處理與傳輸該內容的權利。你保證你對所上傳的內容擁有必要的權利，且其不侵害任何第三方權利。</p>
+<h2><span class="tick" aria-hidden="true"></span><span>6. 付費功能與訂閱</span></h2>
+<ul class="plain">
+<li>本 App 採免費加值（freemium）模式。免費版可建立有限數量的習慣；Premium 解鎖無限習慣、計時器型習慣（番茄鐘專注計時）、進階統計與雲端同步等功能。
+</li>
+<li>付費項目透過你所使用的應用程式商店（App Store／Google Play）進行交易，價格、計費、訂閱期間與自動續訂等條件，於購買時依平台規定顯示。
+</li>
+<li>自動續訂的訂閱會在每期結束前依平台規則自動扣款，除非你在期限前取消。你可於該平台的帳號設定中管理或取消訂閱。
+</li>
+<li>退款依你所使用之應用程式商店的退款政策辦理。
+</li>
+<li>我們可能調整付費方案與價格；變更不溯及你既有的訂閱期間，並會依平台規定通知。
+</li>
+</ul>
+<h2><span class="tick" aria-hidden="true"></span><span>7. 第三方服務</span></h2>
+<p>本 App 整合第三方服務以提供功能，包括但不限於：Supabase（帳號、雲端資料庫與檔案儲存）、Anthropic（AI 鼓勵訊息），以及未來選用功能可能使用的推播與天氣資料服務。這些服務由第三方提供並受其各自條款與隱私政策規範；我們不對第三方服務之行為或內容負責。</p>
+<h2><span class="tick" aria-hidden="true"></span><span>8. 智慧財產權</span></h2>
+<p>本 App 及其相關之軟體、設計、商標、文字、圖示與其他素材（你的內容除外），其智慧財產權均屬我們或我們的授權人所有，受相關法律保護。除本條款明示授予者外，你不取得任何權利。</p>
+<h2><span class="tick" aria-hidden="true"></span><span>9. 健康免責聲明</span></h2>
+<p>本 App 為習慣管理與生產力之輔助工具，所提供之內容（包含 AI 訊息、統計與提醒）僅供一般參考，不構成任何醫療、心理、健康或專業建議，亦不能取代專業診斷或治療。你應依自身狀況審慎判斷並為自己的行為負責。</p>
+<h2><span class="tick" aria-hidden="true"></span><span>10. 服務變更與中止</span></h2>
+<ul class="plain">
+<li>我們可能隨時修改、暫停或終止本 App 之全部或部分功能，並儘可能事先通知。
+</li>
+<li>若你違反本條款，我們得暫停或終止你對服務（特別是帳號與社交功能）的存取。
+</li>
+<li>你可隨時停止使用並移除本 App。
+</li>
+</ul>
+<h2><span class="tick" aria-hidden="true"></span><span>11. 免責聲明</span></h2>
+<p>本 App 以「現狀」與「現有」基礎提供，於法律允許之最大範圍內，我們不就其適售性、特定目的之適用性、不受干擾或無錯誤、或資料絕不遺失作任何明示或默示之保證。你應自行備份重要資料（例如善用雲端同步）。</p>
+<h2><span class="tick" aria-hidden="true"></span><span>12. 責任限制</span></h2>
+<p>於法律允許之最大範圍內，對於因使用或無法使用本 App 所生之任何間接、附帶、衍生或懲罰性損害，或資料、利益、商譽之損失，我們概不負責。在任何情況下，我們之累積賠償責任不超過你於請求發生前十二個月內就本 App 實際支付予我們之金額（若有）。部分地區不允許前述限制，於該等情形下，上述限制將於法律允許之範圍內適用。</p>
+<h2><span class="tick" aria-hidden="true"></span><span>13. 賠償</span></h2>
+<p>若因你違反本條款或不當使用本 App，導致任何第三方對我們提出主張或請求，你同意在法律允許範圍內，對我們因此所受之損害、責任與合理費用負賠償之責。</p>
+<h2><span class="tick" aria-hidden="true"></span><span>14. 條款變更</span></h2>
+<p>我們可能不定期修訂本條款，並更新本頁面頂端的「最後更新」日期。重大變更時，我們會於變更生效前，以 App 內通知等適當方式告知你。若你不同意修訂後之條款，可於變更生效前停止使用並移除本 App；你於變更生效後繼續使用本 App，即視為接受修訂後之條款。</p>
+<h2><span class="tick" aria-hidden="true"></span><span>15. 準據法與爭議</span></h2>
+<p>除你所在地之消費者保護等強制規定外，本條款之解釋與適用以中華民國（台灣）法律為準，並以台灣台北地方法院為第一審管轄法院；但法律另有專屬管轄規定，或對消費者有較有利之管轄規定者，從其規定。</p>
+<h2><span class="tick" aria-hidden="true"></span><span>16. 聯絡我們</span></h2>
+<p>如對本條款有任何疑問，歡迎來信：</p>
+<p><a href="mailto:loopapp18@gmail.com">loopapp18@gmail.com</a></p>
+</section>
+<section class="i18n" id="sec-en" lang="en" hidden>
+<nav class="docs" aria-label="Documents"><a href="privacy.html">Privacy Policy</a><a href="terms.html" aria-current="page">Terms of Service</a><a href="delete-account.html">Account & Data Deletion</a></nav>
+<h1>Terms of Service</h1>
+<p class="lede">最終更新 / Last updated: 2026-06-12</p>
+<p>Welcome to Loop (“the App”). These Terms of Service (“Terms”) form a legally binding agreement between you and the operator of the App, the individual developer Lin Ching-Hung (林靖閎) (“we”). By downloading, installing, accessing or using the App, you confirm that you have read, understood and agree to be bound by these Terms and the Privacy Policy. If you do not agree, do not use the App.</p>
+<h2><span class="tick" aria-hidden="true"></span><span>1. Service description</span></h2>
+<p>The App provides habit building, check-in records, a Pomodoro focus timer, stats review, AI encouragement messages, and social features such as friends and leaderboards, to help you build and maintain daily habits. We may add, modify or remove features from time to time.</p>
+<h2><span class="tick" aria-hidden="true"></span><span>2. Eligibility</span></h2>
+<p>You must be at least 13 (or the minimum age required by law in your region) to use the App. If you are under the legal age of majority, you must use it with the consent and supervision of a legal guardian. By using the App, you represent that you meet these requirements.</p>
+<h2><span class="tick" aria-hidden="true"></span><span>3. Account</span></h2>
+<ul class="plain">
+<li>Signing in is optional; you can use the App offline on your device without an account.
+</li>
+<li>If you register an account, you must provide accurate information and keep your credentials secure.
+</li>
+<li>You are responsible for all activity under your account. If you discover unauthorized use, contact us immediately.
+</li>
+</ul>
+<h2><span class="tick" aria-hidden="true"></span><span>4. License and restrictions</span></h2>
+<p>Provided you comply with these Terms, we grant you a personal, non-exclusive, non-transferable, revocable license to use the App for personal, non-commercial purposes on devices you own or control.</p>
+<p>You may not:</p>
+<ul class="plain">
+<li>Reverse-engineer, decompile, disassemble or attempt to obtain the App’s source code.
+</li>
+<li>Copy, distribute, rent, lend, resell or commercially exploit the App.
+</li>
+<li>Access in bulk by automated means, interfere with or disrupt the service, or circumvent any technical limitation.
+</li>
+<li>Engage in unlawful conduct, infringe others’ rights, harass, or distribute inappropriate content (including within social features).
+</li>
+</ul>
+<p>Content moderation in social features: you can report inappropriate content and block other users within the App. If content or conduct violates these Terms, we may remove the content and restrict, suspend or terminate the related account’s access to social features.</p>
+<h2><span class="tick" aria-hidden="true"></span><span>5. Your content</span></h2>
+<p>Content you create or upload in the App (e.g. habits, check-in records, nickname, avatar photo) remains yours. To provide and operate the service (e.g. cloud sync, cross-device restore, display to your friends), you grant us the rights to store, process and transmit that content to the extent necessary. You represent that you have the necessary rights to the content you upload and that it does not infringe any third-party rights.</p>
+<h2><span class="tick" aria-hidden="true"></span><span>6. Paid features and subscriptions</span></h2>
+<ul class="plain">
+<li>The App uses a freemium model. The free plan allows a limited number of habits; Premium unlocks unlimited habits, timer-based habits (Pomodoro focus timer), advanced stats, cloud sync and more.
+</li>
+<li>Paid items are transacted through the app store you use (App Store / Google Play). Prices, billing, subscription periods and auto-renewal terms are shown at purchase according to platform rules.
+</li>
+<li>Auto-renewing subscriptions renew and are charged before each period ends under the platform’s rules, unless you cancel beforehand. You can manage or cancel subscriptions in your platform account settings.
+</li>
+<li>Refunds are handled according to the refund policy of the app store you use.
+</li>
+<li>We may adjust plans and prices; changes do not apply retroactively to your existing subscription period and will be notified per platform rules.
+</li>
+</ul>
+<h2><span class="tick" aria-hidden="true"></span><span>7. Third-party services</span></h2>
+<p>The App integrates third-party services to provide features, including but not limited to: Supabase (accounts, cloud database and file storage), Anthropic (AI encouragement messages), and push and weather data services that future optional features may use. These services are provided by third parties and governed by their own terms and privacy policies; we are not responsible for the conduct or content of third-party services.</p>
+<h2><span class="tick" aria-hidden="true"></span><span>8. Intellectual property</span></h2>
+<p>The App and its related software, design, trademarks, text, icons and other materials (excluding your content) are the intellectual property of us or our licensors and are protected by applicable law. Except as expressly granted in these Terms, you acquire no rights.</p>
+<h2><span class="tick" aria-hidden="true"></span><span>9. Health disclaimer</span></h2>
+<p>The App is an aid for habit management and productivity. Its content (including AI messages, stats and reminders) is for general reference only and does not constitute medical, psychological, health or professional advice, nor can it replace professional diagnosis or treatment. You should judge carefully based on your own situation and are responsible for your own actions.</p>
+<h2><span class="tick" aria-hidden="true"></span><span>10. Changes and suspension of service</span></h2>
+<ul class="plain">
+<li>We may modify, suspend or terminate all or part of the App at any time, with prior notice where possible.
+</li>
+<li>If you breach these Terms, we may suspend or terminate your access to the service (particularly the account and social features).
+</li>
+<li>You may stop using and remove the App at any time.
+</li>
+</ul>
+<h2><span class="tick" aria-hidden="true"></span><span>11. Disclaimer</span></h2>
+<p>The App is provided on an “as is” and “as available” basis. To the maximum extent permitted by law, we make no express or implied warranties of merchantability, fitness for a particular purpose, uninterrupted or error-free operation, or that data will never be lost. You should back up important data yourself (e.g. by using cloud sync).</p>
+<h2><span class="tick" aria-hidden="true"></span><span>12. Limitation of liability</span></h2>
+<p>To the maximum extent permitted by law, we are not liable for any indirect, incidental, consequential or punitive damages, or loss of data, profits or goodwill, arising from your use of or inability to use the App. In any case, our aggregate liability will not exceed the amount you actually paid us for the App in the twelve months before the claim arose (if any). Some regions do not allow the above limitations; in such cases, they apply to the extent permitted by law.</p>
+<h2><span class="tick" aria-hidden="true"></span><span>13. Indemnification</span></h2>
+<p>If a third party brings a claim or demand against us as a result of your breach of these Terms or improper use of the App, you agree, to the extent permitted by law, to indemnify us for the resulting damages, liabilities and reasonable costs.</p>
+<h2><span class="tick" aria-hidden="true"></span><span>14. Changes to these Terms</span></h2>
+<p>We may revise these Terms from time to time and update the “Last updated” date at the top of this page. For material changes, we will notify you by appropriate means (such as an in-app notice) before the changes take effect. If you do not agree with the revised Terms, you may stop using and remove the App before the changes take effect; your continued use of the App after the changes take effect constitutes acceptance of the revised Terms.</p>
+<h2><span class="tick" aria-hidden="true"></span><span>15. Governing law and disputes</span></h2>
+<p>Except for mandatory rules such as consumer protection in your place of residence, these Terms are interpreted and applied under the laws of the Republic of China (Taiwan), with the Taiwan Taipei District Court as the court of first instance, except where the law provides for exclusive jurisdiction or jurisdiction more favorable to consumers.</p>
+<h2><span class="tick" aria-hidden="true"></span><span>16. Contact us</span></h2>
+<p>If you have any questions about these Terms, please email:</p>
+<p><a href="mailto:loopapp18@gmail.com">loopapp18@gmail.com</a></p>
+</section>
+<section class="i18n" id="sec-ja" lang="ja" hidden>
+<nav class="docs" aria-label="Documents"><a href="privacy.html">プライバシーポリシー</a><a href="terms.html" aria-current="page">利用規約</a><a href="delete-account.html">アカウントとデータの削除</a></nav>
+<h1>利用規約</h1>
+<p class="lede">最終更新 / Last updated: 2026-06-12</p>
+<p>Loop（以下「本アプリ」）へようこそ。本利用規約（以下「本規約」）は、あなたと本アプリの運営者である個人開発者の林靖閎（以下「当社」）との間の法的拘束力のある合意です。本アプリをダウンロード・インストール・アクセス・利用した時点で、本規約および『プライバシーポリシー』を読み理解し、これに同意したものとみなします。同意いただけない場合は、本アプリを利用しないでください。</p>
+<h2><span class="tick" aria-hidden="true"></span><span>1. サービスの説明</span></h2>
+<p>本アプリは、習慣づくり、チェックインの記録、ポモドーロ集中タイマー、統計レビュー、AI励ましメッセージ、ならびにフレンドやランキングなどのソーシャル機能を提供し、日々の習慣の構築と維持を支援します。当社は機能を随時追加・変更・削除する場合があります。</p>
+<h2><span class="tick" aria-hidden="true"></span><span>2. 利用資格</span></h2>
+<p>本アプリの利用には13歳以上（またはお住まいの地域の法律が定める最低年齢以上）である必要があります。法律上の成年に達していない場合は、法定代理人の同意と監督のもとで利用してください。本アプリを利用することで、上記の資格を満たすことを表明したものとみなします。</p>
+<h2><span class="tick" aria-hidden="true"></span><span>3. アカウント</span></h2>
+<ul class="plain">
+<li>ログインは任意です。ログインしなくても端末でオフライン利用できます。
+</li>
+<li>アカウントを登録する場合、正確な情報を提供し、ログイン情報を適切に管理してください。
+</li>
+<li>あなたのアカウントで行われたすべての活動について、あなたが責任を負います。不正利用に気づいた場合は、直ちに当社にご連絡ください。
+</li>
+</ul>
+<h2><span class="tick" aria-hidden="true"></span><span>4. ライセンスと制限</span></h2>
+<p>本規約を遵守することを条件に、当社はあなたに、個人的・非独占的・譲渡不可・撤回可能なライセンスを付与し、あなたが所有または管理する端末で、個人的・非商業的目的で本アプリを利用することを認めます。</p>
+<p>以下の行為は禁止します：</p>
+<ul class="plain">
+<li>本アプリのリバースエンジニアリング、逆コンパイル、逆アセンブル、ソースコードの取得の試み。
+</li>
+<li>本アプリの複製・配布・貸与・転貸・転売・商業利用。
+</li>
+<li>自動化手段による大量アクセス、サービスの妨害・破壊、技術的制限の回避。
+</li>
+<li>違法行為、他者の権利侵害、嫌がらせ、不適切なコンテンツの配布（ソーシャル機能内を含む）。
+</li>
+</ul>
+<p>ソーシャル機能におけるコンテンツ管理：アプリ内で不適切なコンテンツを報告したり、他の利用者をブロックしたりできます。コンテンツや行為が本規約に違反する場合、当社は該当コンテンツを削除し、関連アカウントによるソーシャル機能の利用を制限・停止・終了することがあります。</p>
+<h2><span class="tick" aria-hidden="true"></span><span>5. あなたのコンテンツ</span></h2>
+<p>本アプリで作成・アップロードしたコンテンツ（習慣、記録、ニックネーム、アバター写真など）は、あなたに帰属します。サービスの提供と運用（クラウド同期、機種間の復元、フレンドへの表示など）のため、あなたは当社に対し、必要な範囲でそのコンテンツを保存・処理・送信する権利を付与します。あなたは、アップロードするコンテンツについて必要な権利を有し、それが第三者の権利を侵害しないことを保証します。</p>
+<h2><span class="tick" aria-hidden="true"></span><span>6. 有料機能とサブスクリプション</span></h2>
+<ul class="plain">
+<li>本アプリはフリーミアムモデルを採用しています。無料版では作成できる習慣数に制限があり、Premium は無制限の習慣、タイマー型の習慣（ポモドーロ集中タイマー）、詳細な統計、クラウド同期などを解放します。
+</li>
+<li>有料項目は、ご利用のアプリストア（App Store／Google Play）を通じて取引され、価格・課金・サブスクリプション期間・自動更新などの条件は、購入時にプラットフォームの規定に従って表示されます。
+</li>
+<li>自動更新のサブスクリプションは、期限前に解約しない限り、各期間の終了前にプラットフォームの規則に従って自動的に課金されます。サブスクリプションは各プラットフォームのアカウント設定で管理・解約できます。
+</li>
+<li>返金は、ご利用のアプリストアの返金ポリシーに従います。
+</li>
+<li>当社はプランと価格を変更する場合があります。変更は既存のサブスクリプション期間には遡及せず、プラットフォームの規定に従って通知します。
+</li>
+</ul>
+<h2><span class="tick" aria-hidden="true"></span><span>7. 第三者サービス</span></h2>
+<p>本アプリは機能提供のため第三者サービスを連携します。これには Supabase（アカウント、クラウドデータベース、ファイルストレージ）、Anthropic（AI励ましメッセージ）、および将来の任意機能で使用しうるプッシュ・天気データサービスが含まれますが、これらに限りません。これらは第三者が提供し、各自の規約とプライバシーポリシーに従います。当社は第三者サービスの行為や内容について責任を負いません。</p>
+<h2><span class="tick" aria-hidden="true"></span><span>8. 知的財産権</span></h2>
+<p>本アプリおよび関連するソフトウェア・デザイン・商標・テキスト・アイコンその他の素材（あなたのコンテンツを除く）の知的財産権は、当社または当社のライセンサーに帰属し、関連法令により保護されます。本規約で明示的に付与されるものを除き、あなたはいかなる権利も取得しません。</p>
+<h2><span class="tick" aria-hidden="true"></span><span>9. 健康に関する免責</span></h2>
+<p>本アプリは習慣管理と生産性のための補助ツールです。提供される内容（AIメッセージ、統計、リマインダーを含む）は一般的な参考のためのみであり、医療・心理・健康・専門的な助言を構成せず、専門的な診断や治療に代わるものではありません。あなたは自身の状況に応じて慎重に判断し、自らの行為に責任を負うものとします。</p>
+<h2><span class="tick" aria-hidden="true"></span><span>10. サービスの変更と停止</span></h2>
+<ul class="plain">
+<li>当社はいつでも本アプリの全部または一部を変更・停止・終了でき、可能な限り事前に通知します。
+</li>
+<li>本規約に違反した場合、当社はサービス（特にアカウントとソーシャル機能）へのアクセスを停止または終了できます。
+</li>
+<li>あなたはいつでも利用を中止し、本アプリを削除できます。
+</li>
+</ul>
+<h2><span class="tick" aria-hidden="true"></span><span>11. 免責事項</span></h2>
+<p>本アプリは「現状有姿」かつ「提供可能な範囲」で提供されます。法律で認められる最大限の範囲で、当社は、商品性、特定目的への適合性、無中断・無誤謬、データが決して失われないことについて、明示・黙示を問わずいかなる保証も行いません。重要なデータはご自身でバックアップしてください（クラウド同期の活用など）。</p>
+<h2><span class="tick" aria-hidden="true"></span><span>12. 責任の制限</span></h2>
+<p>法律で認められる最大限の範囲で、本アプリの利用または利用不能から生じる間接的・付随的・結果的・懲罰的損害、またはデータ・利益・信用の損失について、当社は責任を負いません。いかなる場合も、当社の累積的な賠償責任は、請求が生じる前の12か月間に本アプリに関してあなたが実際に当社へ支払った金額（ある場合）を超えません。一部の地域では上記の制限が認められないことがあり、その場合は法律で認められる範囲で適用されます。</p>
+<h2><span class="tick" aria-hidden="true"></span><span>13. 補償</span></h2>
+<p>あなたによる本規約違反または本アプリの不適切な利用の結果、第三者が当社に対して請求や要求を行った場合、あなたは法律で認められる範囲で、それにより当社が被った損害・責任・合理的な費用を補償することに同意します。</p>
+<h2><span class="tick" aria-hidden="true"></span><span>14. 規約の変更</span></h2>
+<p>当社は本規約を随時改定し、本ページ上部の「最終更新」日を更新する場合があります。重要な変更については、発効前にアプリ内通知などの適切な方法でお知らせします。改定後の規約に同意いただけない場合は、発効前に利用を中止し、本アプリを削除できます。変更の発効後も本アプリを使い続けた場合、改定後の規約に同意したものとみなします。</p>
+<h2><span class="tick" aria-hidden="true"></span><span>15. 準拠法と紛争</span></h2>
+<p>お住まいの地域の消費者保護などの強行規定を除き、本規約の解釈と適用は中華民国（台湾）法を準拠法とし、台湾台北地方法院を第一審の管轄裁判所とします。ただし、法律に専属管轄の定め、または消費者により有利な管轄の定めがある場合は、それに従います。</p>
+<h2><span class="tick" aria-hidden="true"></span><span>16. お問い合わせ</span></h2>
+<p>本規約についてご質問があれば、以下までご連絡ください：</p>
+<p><a href="mailto:loopapp18@gmail.com">loopapp18@gmail.com</a></p>
+</section>
+  <footer>
+    <p>Loop — 開發者 Developer: Lin Ching-Hung（林靖閎）</p>
+    <p>聯絡 Contact: <a href="mailto:loopapp18@gmail.com">loopapp18@gmail.com</a></p>
+  </footer>
+</div>
+
+<script>
+(function(){
+  var btns = document.querySelectorAll('.lang button');
+  var secs = { zh: document.getElementById('sec-zh'), en: document.getElementById('sec-en'), ja: document.getElementById('sec-ja') };
+  function show(lang){
+    Object.keys(secs).forEach(function(k){ secs[k].hidden = (k !== lang); });
+    btns.forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.lang === lang)); });
+    document.documentElement.lang = lang === 'zh' ? 'zh-Hant' : lang;
+  }
+  btns.forEach(function(b){ b.addEventListener('click', function(){ show(b.dataset.lang); }); });
+  var nav = (navigator.language || 'zh').toLowerCase();
+  if (nav.indexOf('ja') === 0) show('ja');
+  else if (nav.indexOf('zh') === 0) show('zh');
+  else show('en');
+})();
+</script>
+
+</body>
+</html>
