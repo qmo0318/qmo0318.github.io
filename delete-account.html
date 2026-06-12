@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loop — 帳號與資料刪除 / Account &amp; Data Deletion</title>
+<meta name="description" content="如何刪除你的 Loop 帳號與個人資料。How to delete your Loop account and data.">
+<style>
+  :root{
+    --bg:#101418; --surface:#1a2128; --surface-2:#212a33;
+    --text:#e8edf2; --muted:#93a1ad; --line:#2c3640;
+    --accent:#5bd6a9; --accent-dim:#2e6b56; --danger:#ff7a7a;
+    --radius:14px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  body{
+    background:var(--bg); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","Noto Sans JP","PingFang TC","Hiragino Sans",Roboto,sans-serif;
+    line-height:1.75; font-size:16px;
+  }
+  .wrap{max-width:720px;margin:0 auto;padding:32px 20px 64px}
+  header.site{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:40px;flex-wrap:wrap}
+  .brand{display:flex;align-items:center;gap:12px}
+  .brand svg{display:block}
+  .brand .name{font-weight:700;font-size:20px;letter-spacing:.02em}
+  .brand .by{font-size:12.5px;color:var(--muted)}
+  .lang{display:flex;gap:6px}
+  .lang button{
+    background:var(--surface);color:var(--muted);border:1px solid var(--line);
+    border-radius:999px;padding:6px 14px;font-size:13px;cursor:pointer;font-family:inherit;
+  }
+  .lang button[aria-pressed="true"]{background:var(--accent-dim);color:var(--text);border-color:var(--accent)}
+  .lang button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+  h1{font-size:clamp(26px,5vw,34px);line-height:1.3;margin-bottom:10px;letter-spacing:.01em}
+  .lede{color:var(--muted);margin-bottom:32px}
+  h2{font-size:18px;margin:36px 0 12px;display:flex;align-items:center;gap:10px}
+  h2 .tick{width:8px;height:8px;border-radius:50%;background:var(--accent);flex:none}
+  p{margin-bottom:12px}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:20px 22px;margin-bottom:16px}
+  ol.steps{list-style:none;counter-reset:s;margin:4px 0}
+  ol.steps li{counter-increment:s;position:relative;padding-left:40px;margin-bottom:10px}
+  ol.steps li::before{
+    content:counter(s);position:absolute;left:0;top:2px;width:26px;height:26px;border-radius:50%;
+    background:var(--surface-2);border:1px solid var(--accent-dim);color:var(--accent);
+    font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;
+  }
+  ul.plain{list-style:none}
+  ul.plain li{padding-left:22px;position:relative;margin-bottom:8px}
+  ul.plain li::before{content:"";position:absolute;left:4px;top:.72em;width:7px;height:7px;border-radius:50%;background:var(--accent-dim)}
+  .danger-note{border-left:3px solid var(--danger);background:rgba(255,122,122,.06);padding:12px 16px;border-radius:0 10px 10px 0;margin:16px 0;color:var(--text)}
+  .danger-note strong{color:var(--danger)}
+  a{color:var(--accent)}
+  a.btn{
+    display:inline-block;background:var(--accent);color:#0c1411;text-decoration:none;font-weight:700;
+    padding:11px 22px;border-radius:999px;margin-top:6px;
+  }
+  a.btn:focus-visible{outline:2px solid var(--text);outline-offset:2px}
+  code{background:var(--surface-2);border:1px solid var(--line);border-radius:6px;padding:1px 7px;font-size:14px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+  table{width:100%;border-collapse:collapse;margin:8px 0 4px;font-size:15px}
+  th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--muted);font-weight:600;font-size:13.5px;white-space:nowrap}
+  footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:13.5px}
+  footer p{margin-bottom:4px}
+  section.i18n[hidden]{display:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="site">
+    <div class="brand">
+      <!-- Loop ring mark: an open ring — the loop, released -->
+      <svg width="40" height="40" viewBox="0 0 40 40" role="img" aria-label="Loop">
+        <circle cx="20" cy="20" r="14" fill="none" stroke="#2c3640" stroke-width="5"/>
+        <path d="M20 6 a14 14 0 1 1 -13.4 18.2" fill="none" stroke="#5bd6a9" stroke-width="5" stroke-linecap="round"/>
+      </svg>
+      <div>
+        <div class="name">Loop</div>
+        <div class="by">by Lin Ching-Hung 林靖閎</div>
+      </div>
+    </div>
+    <nav class="lang" aria-label="Language">
+      <button type="button" data-lang="zh" aria-pressed="true">繁體中文</button>
+      <button type="button" data-lang="en" aria-pressed="false">English</button>
+      <button type="button" data-lang="ja" aria-pressed="false">日本語</button>
+    </nav>
+  </header>
+
+  <!-- ===================== 繁體中文 ===================== -->
+  <section class="i18n" id="sec-zh" lang="zh-Hant">
+    <h1>刪除你的 Loop 帳號與資料</h1>
+    <p class="lede">本頁說明如何刪除習慣養成 App「Loop」（開發者：林靖閎）的帳號及相關個人資料。你可以在 App 內直接刪除，也可以不重新安裝 App、直接在本頁提出刪除請求。</p>
+
+    <h2><span class="tick" aria-hidden="true"></span>方式一：在 App 內刪除（最快）</h2>
+    <div class="card">
+      <ol class="steps">
+        <li>開啟 Loop，前往「<strong>我的（設定）</strong>」分頁。</li>
+        <li>點選「<strong>帳號</strong>」。</li>
+        <li>點選「<strong>刪除帳號</strong>」並依畫面確認。</li>
+      </ol>
+      <p>確認後即開始刪除程序，最遲於 <strong>30 天內</strong>完成。</p>
+    </div>
+
+    <h2><span class="tick" aria-hidden="true"></span>方式二：不需安裝 App，來信提出請求</h2>
+    <div class="card">
+      <p>請以你<strong>註冊 Loop 帳號時使用的電子郵件</strong>寄信至 <a href="mailto:loopapp18@gmail.com">loopapp18@gmail.com</a>，主旨註明「刪除 Loop 帳號」。為保護你的資料安全，我們僅受理由註冊信箱寄出的請求，必要時會回信與你確認身分。</p>
+      <p><a class="btn" href="mailto:loopapp18@gmail.com?subject=%E5%88%AA%E9%99%A4%20Loop%20%E5%B8%B3%E8%99%9F">寄出刪除請求</a></p>
+      <p style="color:var(--muted);font-size:14px;margin-top:10px">收到請求後，我們會於 30 天內完成刪除並回信通知你。</p>
+    </div>
+
+    <h2><span class="tick" aria-hidden="true"></span>會刪除哪些資料</h2>
+    <div class="card">
+      <table>
+        <tr><th>刪除項目</th><td>雲端帳號（電子郵件）、習慣與打卡／專注計時紀錄、個人檔案（暱稱、頭像）、已上傳的頭像照片、好友關係與加油等社交資料、推播識別碼（push token）</td></tr>
+        <tr><th>保留項目</th><td>法律要求保留之資料（如有），保留至法定期限屆滿後刪除</td></tr>
+        <tr><th>處理期限</th><td>自確認請求起 30 天內完成刪除或匿名化</td></tr>
+      </table>
+      <div class="danger-note"><strong>此操作無法復原。</strong>刪除帳號不會移除你裝置上的本機資料；如需一併清除，請自行刪除 App 或在 App 內刪除個別習慣。</div>
+      <p>若你只想刪除<strong>部分資料</strong>（例如頭像照片或社交資料）而保留帳號，也可透過上方信箱提出，我們會於 30 天內處理。詳細的資料處理方式請參閱 Loop 的《隱私權政策》（App 內「我的 → 隱私權政策」）。</p>
+    </div>
+  </section>
+
+  <!-- ===================== English ===================== -->
+  <section class="i18n" id="sec-en" lang="en" hidden>
+    <h1>Delete your Loop account &amp; data</h1>
+    <p class="lede">This page explains how to delete your account and associated personal data for the habit-tracking app “Loop” (developer: Lin Ching-Hung). You can delete it directly in the app, or request deletion here without reinstalling the app.</p>
+
+    <h2><span class="tick" aria-hidden="true"></span>Option 1: Delete in the app (fastest)</h2>
+    <div class="card">
+      <ol class="steps">
+        <li>Open Loop and go to the <strong>Me (Settings)</strong> tab.</li>
+        <li>Tap <strong>Account</strong>.</li>
+        <li>Tap <strong>Delete account</strong> and confirm.</li>
+      </ol>
+      <p>Deletion begins upon confirmation and is completed within <strong>30 days</strong>.</p>
+    </div>
+
+    <h2><span class="tick" aria-hidden="true"></span>Option 2: Request by email — no app required</h2>
+    <div class="card">
+      <p>Email <a href="mailto:loopapp18@gmail.com">loopapp18@gmail.com</a> <strong>from the email address registered to your Loop account</strong> with the subject “Delete my Loop account”. To protect your data, we only process requests sent from the registered address and may reply to verify your identity.</p>
+      <p><a class="btn" href="mailto:loopapp18@gmail.com?subject=Delete%20my%20Loop%20account">Send deletion request</a></p>
+      <p style="color:var(--muted);font-size:14px;margin-top:10px">We complete deletion within 30 days of confirming your request and notify you by email.</p>
+    </div>
+
+    <h2><span class="tick" aria-hidden="true"></span>What gets deleted</h2>
+    <div class="card">
+      <table>
+        <tr><th>Deleted</th><td>Cloud account (email address), habits and check-in / focus-timer records, profile (nickname, avatar), uploaded avatar photo, social data (friends, cheers), push token</td></tr>
+        <tr><th>Retained</th><td>Data we are legally required to keep (if any), deleted once the statutory period expires</td></tr>
+        <tr><th>Timeline</th><td>Deletion or anonymization completed within 30 days of the confirmed request</td></tr>
+      </table>
+      <div class="danger-note"><strong>This action cannot be undone.</strong> Deleting your account does not remove local data stored on your device; to clear it, remove the app or delete individual habits in the app.</div>
+      <p>If you would like to delete <strong>only some of your data</strong> (e.g. your avatar photo or social data) while keeping your account, you can request this via the same email; we will process it within 30 days. For full details, see Loop’s Privacy Policy (in-app: Me → Privacy Policy).</p>
+    </div>
+  </section>
+
+  <!-- ===================== 日本語 ===================== -->
+  <section class="i18n" id="sec-ja" lang="ja" hidden>
+    <h1>Loop アカウントとデータの削除</h1>
+    <p class="lede">本ページでは、習慣化アプリ「Loop」（開発者：林靖閎）のアカウントと関連する個人データの削除方法を説明します。アプリ内で直接削除できるほか、アプリを再インストールせずに本ページから削除を依頼することもできます。</p>
+
+    <h2><span class="tick" aria-hidden="true"></span>方法1：アプリ内で削除（最速）</h2>
+    <div class="card">
+      <ol class="steps">
+        <li>Loop を開き、「<strong>マイ（設定）</strong>」タブへ進みます。</li>
+        <li>「<strong>アカウント</strong>」をタップします。</li>
+        <li>「<strong>アカウント削除</strong>」をタップし、確認します。</li>
+      </ol>
+      <p>確認後に削除手続きが開始され、<strong>30日以内</strong>に完了します。</p>
+    </div>
+
+    <h2><span class="tick" aria-hidden="true"></span>方法2：アプリ不要、メールで依頼</h2>
+    <div class="card">
+      <p><strong>Loop アカウントに登録したメールアドレス</strong>から、件名「Loop アカウント削除」で <a href="mailto:loopapp18@gmail.com">loopapp18@gmail.com</a> 宛にご連絡ください。データ保護のため、登録メールアドレスからの依頼のみ受け付け、必要に応じて本人確認のため返信する場合があります。</p>
+      <p><a class="btn" href="mailto:loopapp18@gmail.com?subject=Loop%20%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E5%89%8A%E9%99%A4">削除依頼を送る</a></p>
+      <p style="color:var(--muted);font-size:14px;margin-top:10px">依頼の確認後、30日以内に削除を完了し、メールでお知らせします。</p>
+    </div>
+
+    <h2><span class="tick" aria-hidden="true"></span>削除されるデータ</h2>
+    <div class="card">
+      <table>
+        <tr><th>削除対象</th><td>クラウドアカウント（メールアドレス）、習慣とチェックイン／集中計測の記録、プロフィール（ニックネーム、アバター）、アップロードしたアバター写真、フレンドや応援などのソーシャルデータ、プッシュトークン</td></tr>
+        <tr><th>保持対象</th><td>法律により保持が必要なデータ（ある場合）。法定期間の経過後に削除します</td></tr>
+        <tr><th>期間</th><td>依頼の確認から30日以内に削除または匿名化を完了</td></tr>
+      </table>
+      <div class="danger-note"><strong>この操作は取り消せません。</strong>アカウントを削除しても、端末内のローカルデータは削除されません。消去するには、アプリを削除するか、アプリ内で個別の習慣を削除してください。</div>
+      <p>アカウントを保持したまま<strong>一部のデータのみ</strong>（アバター写真やソーシャルデータなど）を削除したい場合も、上記メールからご依頼ください。30日以内に対応します。詳細は Loop のプライバシーポリシー（アプリ内：マイ → プライバシーポリシー）をご覧ください。</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Loop — 開發者 Developer: Lin Ching-Hung（林靖閎）</p>
+    <p>聯絡 Contact: <a href="mailto:loopapp18@gmail.com">loopapp18@gmail.com</a></p>
+  </footer>
+</div>
+
+<script>
+(function(){
+  var btns = document.querySelectorAll('.lang button');
+  var secs = { zh: document.getElementById('sec-zh'), en: document.getElementById('sec-en'), ja: document.getElementById('sec-ja') };
+  function show(lang){
+    Object.keys(secs).forEach(function(k){ secs[k].hidden = (k !== lang); });
+    btns.forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.lang === lang)); });
+    document.documentElement.lang = lang === 'zh' ? 'zh-Hant' : lang;
+  }
+  btns.forEach(function(b){ b.addEventListener('click', function(){ show(b.dataset.lang); }); });
+  // Pick a sensible default from the browser language
+  var nav = (navigator.language || 'zh').toLowerCase();
+  if (nav.indexOf('ja') === 0) show('ja');
+  else if (nav.indexOf('zh') === 0) show('zh');
+  else show('en');
+})();
+</script>
+</body>
+</html>
