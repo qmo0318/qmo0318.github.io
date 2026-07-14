@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>拍記 PaiJi — 隱私權政策 / Privacy Policy</title>
+<style>
+  :root{
+    --bg:#FFFFFF; --sunken:#F4F5F7;
+    --ink:#17181C; --muted:#565A66; --faint:#9AA0AC; --line:#E8EAEE;
+    --hl-yellow:#FFE94A; --hl-pink:#FFB8D4; --hl-green:#C4F27D;
+    --dot:#DCE0E6; --radius:14px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  body{
+    background:var(--bg);
+    background-image:radial-gradient(var(--dot) 1.1px, transparent 1.1px);
+    background-size:22px 22px;
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC","Hiragino Sans",Roboto,sans-serif;
+    line-height:1.8; font-size:16px;
+  }
+  .wrap{max-width:720px;margin:0 auto;padding:32px 20px 64px;background:var(--bg);
+    box-shadow:0 0 0 1px var(--line);min-height:100vh}
+  header.site{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:8px;flex-wrap:wrap}
+  .brand{display:flex;align-items:center;gap:12px}
+  .brand a{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
+  .brand svg{display:block}
+  .brand .name{font-weight:800;font-size:20px;letter-spacing:.02em}
+  .brand .by{font-size:12.5px;color:var(--faint)}
+  .lang{display:flex;gap:6px}
+  .lang button{
+    background:var(--bg);color:var(--muted);border:2px solid var(--line);
+    border-radius:999px;padding:6px 14px;font-size:13px;cursor:pointer;font-family:inherit;font-weight:600;
+  }
+  .lang button[aria-pressed="true"]{background:var(--hl-yellow);color:var(--ink);border-color:var(--ink)}
+  .lang button:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+  nav.docs{display:flex;gap:18px;margin:14px 0 36px;font-size:13.5px;flex-wrap:wrap}
+  nav.docs a{color:var(--muted);text-decoration:none;border-bottom:2px solid transparent;padding-bottom:2px;font-weight:600}
+  nav.docs a:hover{color:var(--ink)}
+  nav.docs a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--hl-yellow)}
+  h1{font-size:clamp(25px,5vw,32px);line-height:1.35;margin-bottom:8px;letter-spacing:.01em}
+  h1 mark{background:linear-gradient(transparent 55%, var(--hl-yellow) 55%);color:inherit;padding:0 2px}
+  .lede{color:var(--faint);font-size:14px;margin-bottom:28px}
+  h2{font-size:18px;margin:34px 0 12px;display:flex;align-items:flex-start;gap:10px;line-height:1.5}
+  h2 .tick{width:10px;height:10px;border-radius:3px;background:var(--hl-yellow);border:2px solid var(--ink);flex:none;margin-top:.5em}
+  p{margin-bottom:12px}
+  p.sub{font-weight:700;margin-top:18px}
+  .callout{background:var(--sunken);border:2px solid var(--ink);border-radius:var(--radius);padding:14px 16px;margin:14px 0}
+  .callout strong{background:linear-gradient(transparent 60%, var(--hl-green) 60%)}
+  ul.plain{list-style:none;margin:4px 0 14px}
+  ul.plain li{padding-left:22px;position:relative;margin-bottom:8px}
+  ul.plain li::before{content:"";position:absolute;left:4px;top:.72em;width:8px;height:8px;border-radius:2px;background:var(--hl-pink);border:1.5px solid var(--ink)}
+  ul.plain ul{list-style:none;margin-top:8px}
+  ul.plain ul li{padding-left:20px;margin-bottom:6px}
+  ul.plain ul li::before{width:6px;height:6px;background:var(--sunken);border:1.5px solid var(--faint)}
+  a{color:var(--ink);text-decoration-color:var(--hl-pink);text-decoration-thickness:2px}
+  footer{margin-top:48px;padding-top:20px;border-top:2.5px solid var(--ink);color:var(--muted);font-size:13.5px}
+  footer p{margin-bottom:4px}
+  section.i18n[hidden]{display:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="site">
+    <div class="brand">
+      <a href="./" aria-label="PaiJi">
+        <svg width="40" height="40" viewBox="0 0 40 40" role="img" aria-label="拍記 PaiJi">
+          <rect x="1.5" y="1.5" width="37" height="37" rx="9" fill="#FFFDF5" stroke="#17181C" stroke-width="2.5"/>
+          <path d="M8 14 h18" stroke="#FFE94A" stroke-width="5" stroke-linecap="round"/>
+          <path d="M8 21 h24" stroke="#FFB8D4" stroke-width="5" stroke-linecap="round"/>
+          <path d="M8 28 h14" stroke="#C4F27D" stroke-width="5" stroke-linecap="round"/>
+        </svg>
+        <div>
+          <div class="name">拍記 PaiJi</div>
+          <div class="by">by Lin Jing-Hung 林靖閎</div>
+        </div>
+      </a>
+    </div>
+    <nav class="lang" aria-label="Language">
+      <button type="button" data-lang="zh" aria-pressed="true">繁體中文</button>
+      <button type="button" data-lang="en" aria-pressed="false">English</button>
+    </nav>
+  </header>
+
+<!-- ===================== 繁體中文 ===================== -->
+<section class="i18n" id="sec-zh" lang="zh-Hant">
+<nav class="docs" aria-label="Documents"><a href="privacy.html" aria-current="page">隱私權政策</a><a href="terms.html">服務條款</a><a href="support.html">支援</a></nav>
+<h1><mark>隱私權政策</mark></h1>
+<p class="lede">最終更新 / Last updated: 2026-07-14</p>
+<p>拍記 PaiJi 由個人開發者林靖閎營運。本隱私權政策說明拍記 PaiJi（以下稱「本 App」或「我們」）如何收集、使用、儲存、分享與保護你的資料，以及你享有的權利。當你下載、存取或使用本 App，即表示你已閱讀並理解本政策。若你不同意本政策，請停止使用本 App。</p>
+
+<div class="callout">
+<p><strong>一分鐘看懂</strong>：你的筆記照片只在你按下「轉換」時，才會安全傳送至 AI 服務（Anthropic）辨識；<strong>我們的伺服器只做中轉，不儲存你的照片或筆記內容</strong>。轉換完成的筆記與原稿照片都只存在你的手機裡，刪除 App 即刪除。本 App 沒有帳號系統、沒有廣告、沒有行為追蹤。</p>
+</div>
+
+<h2><span class="tick" aria-hidden="true"></span><span>1. 適用範圍</span></h2>
+<p>本政策適用於你使用本 App 時所進行的資料處理。本 App 整合的第三方服務（見第 6 節）有其各自的隱私政策，該等處理不在本政策的適用範圍內。</p>
+
+<h2><span class="tick" aria-hidden="true"></span><span>2. 我們處理哪些資料</span></h2>
+<p class="sub">（a）你主動提供的資料</p>
+<ul class="plain">
+<li>手寫筆記照片：你以相機拍攝或自相簿選取的筆記照片。僅在你按下「轉換」時才會處理與傳送（見第 3 節）。</li>
+<li>轉換偏好：你在問卷與設定中選擇的筆記模式（學習／會議／待辦／隨筆）、「忠實保留或自動修正筆誤」等設定。</li>
+</ul>
+<p class="sub">（b）裝置權限（皆需你授權，且僅在使用對應功能時存取）</p>
+<ul class="plain">
+<li>相機：僅在你拍攝筆記時使用。</li>
+<li>相片圖庫：僅在你主動選取要轉換的照片時存取；我們不會在背景掃描你的相簿。</li>
+</ul>
+<p class="sub">（c）自動處理的資料</p>
+<ul class="plain">
+<li>偏好設定：介面語言、外觀模式等，儲存在你的裝置本機。</li>
+<li>匿名裝置識別碼與轉換次數：為防止服務被濫用（盜刷 AI 額度），我們的雲端中繼服務會以一組無法識別你個人身分的匿名識別碼記錄各裝置的轉換次數；該計數會在約 40 日內自動刪除。</li>
+<li>訂閱狀態：由 RevenueCat 以匿名識別碼管理（見第 5 節）。</li>
+</ul>
+<p class="sub">（d）我們不收集的資料</p>
+<p>本 App 沒有帳號系統，我們不收集你的姓名、電子郵件、電話、位置、通訊錄或廣告識別碼；未整合任何廣告或跨 App 追蹤 SDK。</p>
+
+<h2><span class="tick" aria-hidden="true"></span><span>3. 你的照片與筆記如何處理（請務必閱讀）</span></h2>
+<ul class="plain">
+<li>當你按下「轉換」，該張筆記照片會以加密連線（HTTPS）經我們的雲端中繼服務（Cloudflare Workers）傳送至 Anthropic 的 AI 服務進行文字辨識與整理。</li>
+<li><strong>我們的伺服器只負責轉送，不儲存你的照片，也不儲存轉換結果。</strong></li>
+<li>Anthropic 依其商業條款處理 API 資料：不會將你的照片或轉換內容用於訓練其 AI 模型，並僅於有限期間內基於安全防護目的暫存後刪除。詳見 <a href="https://www.anthropic.com/legal/commercial-terms" rel="noopener">Anthropic Commercial Terms</a> 與 <a href="https://www.anthropic.com/legal/privacy" rel="noopener">Anthropic Privacy Policy</a>。</li>
+<li>轉換完成後，數位筆記與原稿照片皆只儲存在你裝置本機的資料庫；我們沒有任何雲端副本。</li>
+</ul>
+
+<h2><span class="tick" aria-hidden="true"></span><span>4. Notion 同步（選用）</span></h2>
+<ul class="plain">
+<li>若你選擇連接 Notion，授權憑證（token）儲存在你的裝置本機；我們的伺服器不保存它。</li>
+<li>你執行同步時，該篇筆記的內容會經 Notion API 寫入你自己選擇的 Notion 資料庫，其後續處理受 <a href="https://www.notion.com/privacy" rel="noopener">Notion 隱私政策</a>約束。</li>
+<li>你可隨時在設定中中斷 Notion 連接；中斷後本 App 即不再擁有你 Notion 的任何存取權。</li>
+</ul>
+
+<h2><span class="tick" aria-hidden="true"></span><span>5. 訂閱與付款</span></h2>
+<p>訂閱付款完全由 Apple App Store 處理，我們無法取得你的付款卡號等金融資料。我們使用 RevenueCat 以匿名識別碼驗證與管理你的訂閱狀態（詳見 <a href="https://www.revenuecat.com/privacy/" rel="noopener">RevenueCat 隱私政策</a>）。</p>
+
+<h2><span class="tick" aria-hidden="true"></span><span>6. 第三方服務清單</span></h2>
+<ul class="plain">
+<li>Anthropic（美國）：AI 文字辨識與整理——處理你送出轉換的照片。</li>
+<li>Cloudflare（美國）：雲端中繼與防濫用計數——中轉照片（不儲存）、保存匿名裝置計數。</li>
+<li>RevenueCat（美國）：訂閱狀態管理——匿名識別碼與購買紀錄。</li>
+<li>Apple（美國）：付款、訂閱代收代付。</li>
+<li>Notion（美國，選用）：僅在你主動連接並同步時，寫入你的 Notion 工作區。</li>
+</ul>
+<p>上述服務的伺服器可能位於台灣以外地區；我們僅在提供對應功能所必要的範圍內向其傳輸資料。</p>
+
+<h2><span class="tick" aria-hidden="true"></span><span>7. 資料保存與刪除</span></h2>
+<ul class="plain">
+<li>筆記、原稿照片與偏好設定只存在你的裝置本機：刪除本 App 即完整刪除（請注意：我們沒有雲端備份，刪除後無法復原；同步至你 Notion 的內容由你在 Notion 中自行管理）。</li>
+<li>匿名裝置轉換計數：於約 40 日內自動過期刪除。</li>
+<li>訂閱紀錄：依 Apple 與 RevenueCat 的保存政策。</li>
+</ul>
+
+<h2><span class="tick" aria-hidden="true"></span><span>8. 資料安全</span></h2>
+<p>所有網路傳輸皆使用加密連線（HTTPS/TLS）；AI 服務的存取金鑰只保存在我們的伺服器端，不存在於 App 內。惟請理解，沒有任何網路傳輸或儲存方式能保證絕對安全。</p>
+
+<h2><span class="tick" aria-hidden="true"></span><span>9. 你的權利</span></h2>
+<p>依中華民國個人資料保護法，你可就我們處理的資料行使查詢、閱覽、補充更正、停止處理利用及刪除等權利。由於本 App 幾乎所有資料都只存在你的裝置本機，多數權利你可直接於 App 內或刪除 App 行使；其他請求請來信 <a href="mailto:loopapp18@gmail.com">loopapp18@gmail.com</a>，我們將於合理期間內回覆。</p>
+
+<h2><span class="tick" aria-hidden="true"></span><span>10. 兒童隱私</span></h2>
+<p>本 App 不以兒童為對象。我們不會在知情下收集 13 歲以下（或你所在地區法定最低年齡以下）兒童的個人資料。若你認為有兒童未經同意提供了個人資料，請與我們聯絡，我們將盡速刪除。</p>
+
+<h2><span class="tick" aria-hidden="true"></span><span>11. 政策變更</span></h2>
+<p>我們可能不時修訂本政策，並更新頁面上方的「最終更新」日期。重大變更將以 App 內通知等適當方式於生效前告知。變更生效後你繼續使用本 App，即視為同意修訂後的政策。</p>
+
+<h2><span class="tick" aria-hidden="true"></span><span>12. 聯絡我們</span></h2>
+<p>本 App 的資料控管者為個人開發者林靖閎。對本政策或你的資料有任何疑問或請求，請聯絡：</p>
+<p><a href="mailto:loopapp18@gmail.com">loopapp18@gmail.com</a></p>
+</section>
+
+<!-- ===================== English ===================== -->
+<section class="i18n" id="sec-en" lang="en" hidden>
+<nav class="docs" aria-label="Documents"><a href="privacy.html" aria-current="page">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="support.html">Support</a></nav>
+<h1><mark>Privacy Policy</mark></h1>
+<p class="lede">Last updated: 2026-07-14</p>
+<p>PaiJi (拍記) is operated by independent developer Lin Jing-Hung. This Privacy Policy explains how PaiJi (the “App”, “we”, “us”) collects, uses, stores, shares and protects your data, and the rights you have. By downloading, accessing or using the App you acknowledge that you have read and understood this Policy. If you do not agree, please stop using the App.</p>
+
+<div class="callout">
+<p><strong>In one minute</strong>: your note photos are securely sent to an AI service (Anthropic) for recognition only when you tap “Convert”; <strong>our server only relays the photo and never stores your photos or notes</strong>. Converted notes and original photos live only on your device — deleting the App deletes them. No accounts, no ads, no behavioural tracking.</p>
+</div>
+
+<h2><span class="tick" aria-hidden="true"></span><span>1. Scope</span></h2>
+<p>This Policy applies to data processing carried out when you use the App. Third-party services integrated in the App (see Section 6) have their own privacy policies, which are outside the scope of this Policy.</p>
+
+<h2><span class="tick" aria-hidden="true"></span><span>2. Data we process</span></h2>
+<p class="sub">(a) Data you provide</p>
+<ul class="plain">
+<li>Handwritten note photos: photos you take with the camera or pick from your photo library. They are processed and transmitted only when you tap “Convert” (see Section 3).</li>
+<li>Conversion preferences: the note mode you choose (study / meeting / to-do / journal) and settings such as “faithful transcription vs. auto-correct”.</li>
+</ul>
+<p class="sub">(b) Device permissions (always with your authorisation, accessed only while using the feature)</p>
+<ul class="plain">
+<li>Camera: used only when you photograph a note.</li>
+<li>Photo library: accessed only when you actively pick a photo to convert; we never scan your library in the background.</li>
+</ul>
+<p class="sub">(c) Automatically processed data</p>
+<ul class="plain">
+<li>Preferences: interface language, appearance mode, etc., stored locally on your device.</li>
+<li>Anonymous device identifier and conversion counts: to prevent abuse of the AI service, our cloud relay keeps a per-device conversion count under an anonymous identifier that cannot identify you personally; counts are automatically deleted within roughly 40 days.</li>
+<li>Subscription status: managed by RevenueCat under an anonymous identifier (see Section 5).</li>
+</ul>
+<p class="sub">(d) Data we do not collect</p>
+<p>The App has no account system. We do not collect your name, email address, phone number, location, contacts or advertising identifiers, and we integrate no advertising or cross-app tracking SDKs.</p>
+
+<h2><span class="tick" aria-hidden="true"></span><span>3. How your photos and notes are handled (please read)</span></h2>
+<ul class="plain">
+<li>When you tap “Convert”, the note photo is transmitted over an encrypted connection (HTTPS) through our cloud relay (Cloudflare Workers) to Anthropic’s AI service for text recognition and structuring.</li>
+<li><strong>Our server only relays the request. It stores neither your photos nor the conversion results.</strong></li>
+<li>Anthropic processes API data under its commercial terms: your photos and converted content are not used to train its AI models and are retained only briefly for safety purposes before deletion. See the <a href="https://www.anthropic.com/legal/commercial-terms" rel="noopener">Anthropic Commercial Terms</a> and <a href="https://www.anthropic.com/legal/privacy" rel="noopener">Anthropic Privacy Policy</a>.</li>
+<li>After conversion, both the digital note and the original photo are stored only in the local database on your device; we keep no cloud copy.</li>
+</ul>
+
+<h2><span class="tick" aria-hidden="true"></span><span>4. Notion sync (optional)</span></h2>
+<ul class="plain">
+<li>If you choose to connect Notion, the authorisation token is stored locally on your device; our server does not keep it.</li>
+<li>When you sync, the content of that note is written via the Notion API into the Notion database you selected; further processing is governed by the <a href="https://www.notion.com/privacy" rel="noopener">Notion Privacy Policy</a>.</li>
+<li>You can disconnect Notion at any time in Settings; after disconnecting, the App no longer has any access to your Notion.</li>
+</ul>
+
+<h2><span class="tick" aria-hidden="true"></span><span>5. Subscriptions and payment</span></h2>
+<p>Subscription payments are handled entirely by the Apple App Store; we never receive your card number or other financial details. We use RevenueCat to verify and manage your subscription status under an anonymous identifier (see the <a href="https://www.revenuecat.com/privacy/" rel="noopener">RevenueCat Privacy Policy</a>).</p>
+
+<h2><span class="tick" aria-hidden="true"></span><span>6. Third-party services</span></h2>
+<ul class="plain">
+<li>Anthropic (US): AI text recognition — processes the photos you submit for conversion.</li>
+<li>Cloudflare (US): cloud relay and anti-abuse counting — relays photos (no storage) and stores anonymous per-device counts.</li>
+<li>RevenueCat (US): subscription management — anonymous identifier and purchase records.</li>
+<li>Apple (US): payment and subscription billing.</li>
+<li>Notion (US, optional): writes to your Notion workspace only when you actively connect and sync.</li>
+</ul>
+<p>These services’ servers may be located outside your jurisdiction; we transmit only what is necessary to provide the corresponding feature.</p>
+
+<h2><span class="tick" aria-hidden="true"></span><span>7. Retention and deletion</span></h2>
+<ul class="plain">
+<li>Notes, original photos and preferences exist only on your device: deleting the App deletes them completely (note: we keep no cloud backup, so this cannot be undone; content you synced to Notion is managed by you in Notion).</li>
+<li>Anonymous per-device conversion counts expire and are deleted automatically within roughly 40 days.</li>
+<li>Subscription records follow Apple’s and RevenueCat’s retention policies.</li>
+</ul>
+
+<h2><span class="tick" aria-hidden="true"></span><span>8. Security</span></h2>
+<p>All network transmissions use encrypted connections (HTTPS/TLS); the AI service credentials are kept only on our server and never inside the App. Please understand, however, that no method of transmission or storage can be guaranteed absolutely secure.</p>
+
+<h2><span class="tick" aria-hidden="true"></span><span>9. Your rights</span></h2>
+<p>Under applicable data protection laws (including Taiwan’s Personal Data Protection Act), you may request access, correction, restriction of processing and deletion of your data. Because almost all data lives only on your device, you can exercise most rights directly in the App or by deleting it; for anything else, email <a href="mailto:loopapp18@gmail.com">loopapp18@gmail.com</a> and we will respond within a reasonable time.</p>
+
+<h2><span class="tick" aria-hidden="true"></span><span>10. Children’s privacy</span></h2>
+<p>The App is not directed at children. We do not knowingly collect personal data from children under 13 (or the minimum age required in your jurisdiction). If you believe a child has provided personal data without consent, please contact us and we will delete it promptly.</p>
+
+<h2><span class="tick" aria-hidden="true"></span><span>11. Changes to this Policy</span></h2>
+<p>We may revise this Policy from time to time and will update the “Last updated” date above. Material changes will be announced through appropriate means such as in-app notices before they take effect. Continued use of the App after changes take effect constitutes acceptance of the revised Policy.</p>
+
+<h2><span class="tick" aria-hidden="true"></span><span>12. Contact us</span></h2>
+<p>The data controller of the App is independent developer Lin Jing-Hung. For any questions or requests about this Policy or your data, contact:</p>
+<p><a href="mailto:loopapp18@gmail.com">loopapp18@gmail.com</a></p>
+</section>
+
+  <footer>
+    <p>拍記 PaiJi — 開發者 Developer: Lin Jing-Hung（林靖閎）</p>
+    <p>聯絡 Contact: <a href="mailto:loopapp18@gmail.com">loopapp18@gmail.com</a></p>
+  </footer>
+</div>
+
+<script>
+(function(){
+  var btns = document.querySelectorAll('.lang button');
+  var secs = { zh: document.getElementById('sec-zh'), en: document.getElementById('sec-en') };
+  function show(lang){
+    Object.keys(secs).forEach(function(k){ secs[k].hidden = (k !== lang); });
+    btns.forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.lang === lang)); });
+    document.documentElement.lang = lang === 'zh' ? 'zh-Hant' : lang;
+  }
+  btns.forEach(function(b){ b.addEventListener('click', function(){ show(b.dataset.lang); }); });
+  var nav = (navigator.language || 'zh').toLowerCase();
+  if (nav.indexOf('zh') === 0) show('zh'); else show('en');
+})();
+</script>
+
+</body>
+</html>

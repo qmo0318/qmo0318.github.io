@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>拍記 PaiJi — 服務條款 / Terms of Service</title>
+<style>
+  :root{
+    --bg:#FFFFFF; --sunken:#F4F5F7;
+    --ink:#17181C; --muted:#565A66; --faint:#9AA0AC; --line:#E8EAEE;
+    --hl-yellow:#FFE94A; --hl-pink:#FFB8D4; --hl-green:#C4F27D;
+    --dot:#DCE0E6; --radius:14px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  body{
+    background:var(--bg);
+    background-image:radial-gradient(var(--dot) 1.1px, transparent 1.1px);
+    background-size:22px 22px;
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC","Hiragino Sans",Roboto,sans-serif;
+    line-height:1.8; font-size:16px;
+  }
+  .wrap{max-width:720px;margin:0 auto;padding:32px 20px 64px;background:var(--bg);
+    box-shadow:0 0 0 1px var(--line);min-height:100vh}
+  header.site{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:8px;flex-wrap:wrap}
+  .brand{display:flex;align-items:center;gap:12px}
+  .brand a{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
+  .brand svg{display:block}
+  .brand .name{font-weight:800;font-size:20px;letter-spacing:.02em}
+  .brand .by{font-size:12.5px;color:var(--faint)}
+  .lang{display:flex;gap:6px}
+  .lang button{
+    background:var(--bg);color:var(--muted);border:2px solid var(--line);
+    border-radius:999px;padding:6px 14px;font-size:13px;cursor:pointer;font-family:inherit;font-weight:600;
+  }
+  .lang button[aria-pressed="true"]{background:var(--hl-yellow);color:var(--ink);border-color:var(--ink)}
+  .lang button:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+  nav.docs{display:flex;gap:18px;margin:14px 0 36px;font-size:13.5px;flex-wrap:wrap}
+  nav.docs a{color:var(--muted);text-decoration:none;border-bottom:2px solid transparent;padding-bottom:2px;font-weight:600}
+  nav.docs a:hover{color:var(--ink)}
+  nav.docs a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--hl-yellow)}
+  h1{font-size:clamp(25px,5vw,32px);line-height:1.35;margin-bottom:8px;letter-spacing:.01em}
+  h1 mark{background:linear-gradient(transparent 55%, var(--hl-yellow) 55%);color:inherit;padding:0 2px}
+  .lede{color:var(--faint);font-size:14px;margin-bottom:28px}
+  h2{font-size:18px;margin:34px 0 12px;display:flex;align-items:flex-start;gap:10px;line-height:1.5}
+  h2 .tick{width:10px;height:10px;border-radius:3px;background:var(--hl-yellow);border:2px solid var(--ink);flex:none;margin-top:.5em}
+  p{margin-bottom:12px}
+  p.sub{font-weight:700;margin-top:18px}
+  .callout{background:var(--sunken);border:2px solid var(--ink);border-radius:var(--radius);padding:14px 16px;margin:14px 0}
+  .callout strong{background:linear-gradient(transparent 60%, var(--hl-green) 60%)}
+  ul.plain{list-style:none;margin:4px 0 14px}
+  ul.plain li{padding-left:22px;position:relative;margin-bottom:8px}
+  ul.plain li::before{content:"";position:absolute;left:4px;top:.72em;width:8px;height:8px;border-radius:2px;background:var(--hl-pink);border:1.5px solid var(--ink)}
+  ul.plain ul{list-style:none;margin-top:8px}
+  ul.plain ul li{padding-left:20px;margin-bottom:6px}
+  ul.plain ul li::before{width:6px;height:6px;background:var(--sunken);border:1.5px solid var(--faint)}
+  a{color:var(--ink);text-decoration-color:var(--hl-pink);text-decoration-thickness:2px}
+  footer{margin-top:48px;padding-top:20px;border-top:2.5px solid var(--ink);color:var(--muted);font-size:13.5px}
+  footer p{margin-bottom:4px}
+  section.i18n[hidden]{display:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="site">
+    <div class="brand">
+      <a href="./" aria-label="PaiJi">
+        <svg width="40" height="40" viewBox="0 0 40 40" role="img" aria-label="拍記 PaiJi">
+          <rect x="1.5" y="1.5" width="37" height="37" rx="9" fill="#FFFDF5" stroke="#17181C" stroke-width="2.5"/>
+          <path d="M8 14 h18" stroke="#FFE94A" stroke-width="5" stroke-linecap="round"/>
+          <path d="M8 21 h24" stroke="#FFB8D4" stroke-width="5" stroke-linecap="round"/>
+          <path d="M8 28 h14" stroke="#C4F27D" stroke-width="5" stroke-linecap="round"/>
+        </svg>
+        <div>
+          <div class="name">拍記 PaiJi</div>
+          <div class="by">by Lin Jing-Hung 林靖閎</div>
+        </div>
+      </a>
+    </div>
+    <nav class="lang" aria-label="Language">
+      <button type="button" data-lang="zh" aria-pressed="true">繁體中文</button>
+      <button type="button" data-lang="en" aria-pressed="false">English</button>
+    </nav>
+  </header>
+
+<!-- ===================== 繁體中文 ===================== -->
+<section class="i18n" id="sec-zh" lang="zh-Hant">
+<nav class="docs" aria-label="Documents"><a href="privacy.html">隱私權政策</a><a href="terms.html" aria-current="page">服務條款</a><a href="support.html">支援</a></nav>
+<h1><mark>服務條款</mark></h1>
+<p class="lede">最終更新 / Last updated: 2026-07-14</p>
+<p>歡迎使用拍記 PaiJi。本服務條款（以下稱「本條款」）是你與本 App 營運者——個人開發者林靖閎（以下稱「我們」）——之間的協議，規範你對拍記 PaiJi（以下稱「本 App」）的使用。當你下載、存取或使用本 App，即表示你同意受本條款約束；若不同意，請勿使用本 App。</p>
+
+<h2><span class="tick" aria-hidden="true"></span><span>1. 服務說明</span></h2>
+<p>本 App 提供手寫筆記數位化服務：你拍攝或匯入手寫筆記照片，由 AI 服務辨識並整理為結構化的數位筆記，儲存於你裝置本機的筆記庫，並可選擇同步至你自己的 Notion 工作區。資料的處理方式詳見<a href="privacy.html">隱私權政策</a>。</p>
+
+<h2><span class="tick" aria-hidden="true"></span><span>2. 使用資格</span></h2>
+<p>你須年滿 13 歲（或你所在地區法律規定的最低年齡）方可使用本 App。未成年人使用本 App 應經法定代理人同意。</p>
+
+<h2><span class="tick" aria-hidden="true"></span><span>3. 使用授權與限制</span></h2>
+<p>我們授予你一項個人、不可轉讓、非專屬、可撤回的授權，供你於自有裝置上使用本 App。你不得：</p>
+<ul class="plain">
+<li>對本 App 進行逆向工程、反編譯、提取原始碼，或規避其技術保護措施；</li>
+<li>以自動化程式、偽造識別碼或其他方式規避免費額度、訂閱驗證或防濫用機制；</li>
+<li>轉售、出租本 App 或將其服務（含 AI 轉換介面）提供予第三方作為服務使用；</li>
+<li>將本 App 用於任何違法目的。</li>
+</ul>
+
+<h2><span class="tick" aria-hidden="true"></span><span>4. 你的內容</span></h2>
+<p>你的筆記照片與轉換後的筆記內容都屬於你。為提供服務，你授權我們在你按下「轉換」時，將該照片傳送至 AI 服務進行辨識（詳見隱私權政策第 3 節）；除此之外我們不對你的內容主張任何權利。你應確保你上傳的內容不侵害他人權利（例如著作權、隱私）且不含違法內容。</p>
+
+<h2><span class="tick" aria-hidden="true"></span><span>5. AI 轉換結果聲明（請務必閱讀）</span></h2>
+<div class="callout">
+<p>AI 辨識手寫文字<strong>可能發生錯誤、遺漏或誤判</strong>（尤其是潦草字跡、特殊符號、專業術語）。轉換結果僅供參考，<strong>重要內容請務必對照原稿自行核對</strong>。對於因依賴轉換結果而生的任何損失（例如抄錄錯誤的日期、數字、藥品名、法律或財務內容），我們不承擔責任。</p>
+</div>
+
+<h2><span class="tick" aria-hidden="true"></span><span>6. 免費額度與訂閱</span></h2>
+<p class="sub">（a）免費方案</p>
+<p>免費使用者每月可轉換 5 頁筆記，額度於每月重置。免費額度供正常個人使用，我們得對濫用行為（見第 3 條）限制或停止服務。</p>
+<p class="sub">（b）拍記 Pro（自動續訂訂閱）</p>
+<ul class="plain">
+<li>訂閱方案：月訂閱、年訂閱與不定期提供的限時優惠年訂閱。實際價格以 App Store 購買頁面顯示為準。</li>
+<li>Pro 權益：每月 80 頁轉換額度（公平使用上限）及完整功能。</li>
+<li>付款將於確認購買時自你的 Apple 帳戶收取。</li>
+<li>訂閱將自動續訂，除非你在當期結束前至少 24 小時關閉自動續訂；系統將於當期結束前 24 小時內按所選方案價格自你的 Apple 帳戶扣款。</li>
+<li>你可隨時於 iOS「設定 → Apple 帳戶 → 訂閱」管理或取消訂閱；取消於當期結束後生效，已付款項不予按比例退還。</li>
+<li>退款由 Apple 依其政策處理，請至 <a href="https://reportaproblem.apple.com" rel="noopener">reportaproblem.apple.com</a> 申請。</li>
+</ul>
+<p class="sub">（c）額度與方案變更</p>
+<p>我們可能調整免費額度、訂閱價格或權益內容；調整將透過 App 內公告等適當方式告知，且不影響你已付費的當期權益。</p>
+
+<h2><span class="tick" aria-hidden="true"></span><span>7. 第三方服務</span></h2>
+<p>本 App 整合 Anthropic（AI 辨識）、Cloudflare（雲端中繼）、RevenueCat（訂閱管理）、Apple（付款）及 Notion（選用同步）。該等服務由第三方提供，其可用性與內容變更非我們所能控制；第三方服務中斷可能影響本 App 對應功能（例如 AI 轉換或 Notion 同步暫時無法使用）。</p>
+
+<h2><span class="tick" aria-hidden="true"></span><span>8. 智慧財產權</span></h2>
+<p>本 App（含程式、介面設計、圖示、文案，但不含你的內容）之一切智慧財產權屬於我們或授權人所有。除本條款明示授權外，不得重製、改作或散布。</p>
+
+<h2><span class="tick" aria-hidden="true"></span><span>9. 服務變更與中止</span></h2>
+<p>我們得基於營運需要新增、調整或移除本 App 之功能，或於必要時（含違反本條款）限制、暫停或終止你對部分或全部服務之使用。我們亦保留終止本 App 營運之權利；若終止營運，將提前以適當方式公告。由於你的筆記皆儲存於裝置本機，服務終止不影響你已儲存的筆記。</p>
+
+<h2><span class="tick" aria-hidden="true"></span><span>10. 免責聲明</span></h2>
+<p>本 App 依「現狀」及「現有」基礎提供。在法律允許的最大範圍內，我們不就本 App 之不中斷、無錯誤、符合特定目的等作出任何明示或默示保證。</p>
+
+<h2><span class="tick" aria-hidden="true"></span><span>11. 責任限制</span></h2>
+<p>在法律允許的最大範圍內，我們對因使用或無法使用本 App 所生之間接、附隨、衍生性損害不負賠償責任；就一切損害之累計賠償總額，以你於請求發生前十二個月內實際支付予本 App 之訂閱費用為上限。消費者依法享有之權利不受本條影響。</p>
+
+<h2><span class="tick" aria-hidden="true"></span><span>12. 條款變更</span></h2>
+<p>我們可能不時修訂本條款，並更新頁面上方的「最終更新」日期；重大變更將以 App 內通知等適當方式於生效前告知。變更生效後你繼續使用本 App，即視為同意修訂後的條款。</p>
+
+<h2><span class="tick" aria-hidden="true"></span><span>13. 準據法與爭議解決</span></h2>
+<p>本條款以中華民國（台灣）法律為準據法。因本條款所生之爭議，雙方同意以台灣台北地方法院為第一審管轄法院；但法律有專屬管轄或消費者保護之強制規定者，從其規定。</p>
+
+<h2><span class="tick" aria-hidden="true"></span><span>14. 聯絡我們</span></h2>
+<p>對本條款有任何疑問，請聯絡：<a href="mailto:loopapp18@gmail.com">loopapp18@gmail.com</a></p>
+</section>
+
+<!-- ===================== English ===================== -->
+<section class="i18n" id="sec-en" lang="en" hidden>
+<nav class="docs" aria-label="Documents"><a href="privacy.html">Privacy Policy</a><a href="terms.html" aria-current="page">Terms of Service</a><a href="support.html">Support</a></nav>
+<h1><mark>Terms of Service</mark></h1>
+<p class="lede">Last updated: 2026-07-14</p>
+<p>Welcome to PaiJi (拍記). These Terms of Service (the “Terms”) are an agreement between you and the operator of the App, independent developer Lin Jing-Hung (“we”, “us”), governing your use of PaiJi (the “App”). By downloading, accessing or using the App you agree to be bound by these Terms; if you do not agree, do not use the App.</p>
+
+<h2><span class="tick" aria-hidden="true"></span><span>1. The service</span></h2>
+<p>The App digitises handwritten notes: you photograph or import a handwritten note, an AI service recognises and structures it into a digital note stored in the local library on your device, optionally syncing to your own Notion workspace. See the <a href="privacy.html">Privacy Policy</a> for how data is handled.</p>
+
+<h2><span class="tick" aria-hidden="true"></span><span>2. Eligibility</span></h2>
+<p>You must be at least 13 years old (or the minimum age required in your jurisdiction) to use the App. Minors should use the App with the consent of a legal guardian.</p>
+
+<h2><span class="tick" aria-hidden="true"></span><span>3. Licence and restrictions</span></h2>
+<p>We grant you a personal, non-transferable, non-exclusive, revocable licence to use the App on your own devices. You must not:</p>
+<ul class="plain">
+<li>reverse engineer, decompile or extract the source code of the App, or circumvent its technical protections;</li>
+<li>circumvent the free quota, subscription verification or anti-abuse mechanisms by automation, forged identifiers or any other means;</li>
+<li>resell or rent the App, or offer its services (including the AI conversion interface) to third parties as a service;</li>
+<li>use the App for any unlawful purpose.</li>
+</ul>
+
+<h2><span class="tick" aria-hidden="true"></span><span>4. Your content</span></h2>
+<p>Your note photos and converted notes belong to you. To provide the service, you authorise us to transmit a photo to the AI service for recognition when you tap “Convert” (see Section 3 of the Privacy Policy); beyond that we claim no rights in your content. You are responsible for ensuring your content does not infringe others’ rights (e.g. copyright, privacy) and contains nothing unlawful.</p>
+
+<h2><span class="tick" aria-hidden="true"></span><span>5. AI output disclaimer (please read)</span></h2>
+<div class="callout">
+<p>AI recognition of handwriting <strong>may contain errors, omissions or misreadings</strong> (especially with messy handwriting, special symbols or technical terms). Conversion results are for reference only — <strong>always verify important content against your original notes</strong>. We accept no liability for losses arising from reliance on conversion results (e.g. mis-transcribed dates, figures, medication names, legal or financial content).</p>
+</div>
+
+<h2><span class="tick" aria-hidden="true"></span><span>6. Free quota and subscriptions</span></h2>
+<p class="sub">(a) Free plan</p>
+<p>Free users can convert 5 pages per month; the quota resets monthly. The free quota is for normal personal use, and we may restrict or suspend service in cases of abuse (see Section 3).</p>
+<p class="sub">(b) PaiJi Pro (auto-renewable subscription)</p>
+<ul class="plain">
+<li>Plans: monthly, yearly, and an occasionally offered limited-time discounted yearly plan. Actual prices are as shown on the App Store purchase page.</li>
+<li>Pro benefits: 80 conversion pages per month (fair-use cap) and full features.</li>
+<li>Payment is charged to your Apple Account upon confirmation of purchase.</li>
+<li>Subscriptions renew automatically unless auto-renewal is turned off at least 24 hours before the end of the current period; your Apple Account is charged for renewal within 24 hours before the period ends at the price of the selected plan.</li>
+<li>You can manage or cancel subscriptions at any time in iOS Settings → Apple Account → Subscriptions. Cancellation takes effect at the end of the current period; paid amounts are not refunded pro rata.</li>
+<li>Refunds are handled by Apple under its policies at <a href="https://reportaproblem.apple.com" rel="noopener">reportaproblem.apple.com</a>.</li>
+</ul>
+<p class="sub">(c) Changes to quotas and plans</p>
+<p>We may adjust the free quota, subscription prices or benefits; changes will be announced through appropriate means such as in-app notices and will not affect benefits already paid for in the current period.</p>
+
+<h2><span class="tick" aria-hidden="true"></span><span>7. Third-party services</span></h2>
+<p>The App integrates Anthropic (AI recognition), Cloudflare (cloud relay), RevenueCat (subscription management), Apple (payment) and Notion (optional sync). These services are provided by third parties whose availability and changes are beyond our control; outages of third-party services may affect the corresponding features of the App (e.g. AI conversion or Notion sync being temporarily unavailable).</p>
+
+<h2><span class="tick" aria-hidden="true"></span><span>8. Intellectual property</span></h2>
+<p>All intellectual property rights in the App (including code, interface design, icons and copy, but excluding your content) belong to us or our licensors. No reproduction, adaptation or distribution is permitted except as expressly licensed in these Terms.</p>
+
+<h2><span class="tick" aria-hidden="true"></span><span>9. Changes and termination of service</span></h2>
+<p>We may add, adjust or remove features of the App for operational reasons, and may restrict, suspend or terminate your use of part or all of the service where necessary (including breaches of these Terms). We also reserve the right to discontinue the App; any discontinuation will be announced in advance through appropriate means. Because your notes are stored locally on your device, discontinuation does not affect notes you have already saved.</p>
+
+<h2><span class="tick" aria-hidden="true"></span><span>10. Disclaimer</span></h2>
+<p>The App is provided on an “as is” and “as available” basis. To the maximum extent permitted by law, we make no express or implied warranties, including of uninterrupted or error-free operation or fitness for a particular purpose.</p>
+
+<h2><span class="tick" aria-hidden="true"></span><span>11. Limitation of liability</span></h2>
+<p>To the maximum extent permitted by law, we are not liable for indirect, incidental or consequential damages arising from your use of, or inability to use, the App; our aggregate liability for all damages is capped at the subscription fees you actually paid for the App in the twelve months preceding the claim. Statutory consumer rights remain unaffected.</p>
+
+<h2><span class="tick" aria-hidden="true"></span><span>12. Changes to these Terms</span></h2>
+<p>We may revise these Terms from time to time and will update the “Last updated” date above; material changes will be announced through appropriate means such as in-app notices before taking effect. Continued use of the App after changes take effect constitutes acceptance of the revised Terms.</p>
+
+<h2><span class="tick" aria-hidden="true"></span><span>13. Governing law and disputes</span></h2>
+<p>These Terms are governed by the laws of the Republic of China (Taiwan). The parties agree that the Taipei District Court of Taiwan shall be the court of first instance for disputes arising from these Terms, except where mandatory rules on exclusive jurisdiction or consumer protection provide otherwise.</p>
+
+<h2><span class="tick" aria-hidden="true"></span><span>14. Contact us</span></h2>
+<p>For any questions about these Terms, contact: <a href="mailto:loopapp18@gmail.com">loopapp18@gmail.com</a></p>
+</section>
+
+  <footer>
+    <p>拍記 PaiJi — 開發者 Developer: Lin Jing-Hung（林靖閎）</p>
+    <p>聯絡 Contact: <a href="mailto:loopapp18@gmail.com">loopapp18@gmail.com</a></p>
+  </footer>
+</div>
+
+<script>
+(function(){
+  var btns = document.querySelectorAll('.lang button');
+  var secs = { zh: document.getElementById('sec-zh'), en: document.getElementById('sec-en') };
+  function show(lang){
+    Object.keys(secs).forEach(function(k){ secs[k].hidden = (k !== lang); });
+    btns.forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.lang === lang)); });
+    document.documentElement.lang = lang === 'zh' ? 'zh-Hant' : lang;
+  }
+  btns.forEach(function(b){ b.addEventListener('click', function(){ show(b.dataset.lang); }); });
+  var nav = (navigator.language || 'zh').toLowerCase();
+  if (nav.indexOf('zh') === 0) show('zh'); else show('en');
+})();
+</script>
+
+</body>
+</html>

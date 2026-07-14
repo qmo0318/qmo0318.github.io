@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>拍記 PaiJi — 支援 / Support</title>
+<style>
+  :root{
+    --bg:#FFFFFF; --sunken:#F4F5F7;
+    --ink:#17181C; --muted:#565A66; --faint:#9AA0AC; --line:#E8EAEE;
+    --hl-yellow:#FFE94A; --hl-pink:#FFB8D4; --hl-green:#C4F27D;
+    --dot:#DCE0E6; --radius:14px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  body{
+    background:var(--bg);
+    background-image:radial-gradient(var(--dot) 1.1px, transparent 1.1px);
+    background-size:22px 22px;
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC","Hiragino Sans",Roboto,sans-serif;
+    line-height:1.8; font-size:16px;
+  }
+  .wrap{max-width:720px;margin:0 auto;padding:32px 20px 64px;background:var(--bg);
+    box-shadow:0 0 0 1px var(--line);min-height:100vh}
+  header.site{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:8px;flex-wrap:wrap}
+  .brand{display:flex;align-items:center;gap:12px}
+  .brand a{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
+  .brand svg{display:block}
+  .brand .name{font-weight:800;font-size:20px;letter-spacing:.02em}
+  .brand .by{font-size:12.5px;color:var(--faint)}
+  .lang{display:flex;gap:6px}
+  .lang button{
+    background:var(--bg);color:var(--muted);border:2px solid var(--line);
+    border-radius:999px;padding:6px 14px;font-size:13px;cursor:pointer;font-family:inherit;font-weight:600;
+  }
+  .lang button[aria-pressed="true"]{background:var(--hl-yellow);color:var(--ink);border-color:var(--ink)}
+  .lang button:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+  nav.docs{display:flex;gap:18px;margin:14px 0 36px;font-size:13.5px;flex-wrap:wrap}
+  nav.docs a{color:var(--muted);text-decoration:none;border-bottom:2px solid transparent;padding-bottom:2px;font-weight:600}
+  nav.docs a:hover{color:var(--ink)}
+  nav.docs a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--hl-yellow)}
+  h1{font-size:clamp(25px,5vw,32px);line-height:1.35;margin-bottom:8px;letter-spacing:.01em}
+  h1 mark{background:linear-gradient(transparent 55%, var(--hl-yellow) 55%);color:inherit;padding:0 2px}
+  .lede{color:var(--faint);font-size:14px;margin-bottom:28px}
+  h2{font-size:18px;margin:34px 0 12px;display:flex;align-items:flex-start;gap:10px;line-height:1.5}
+  h2 .tick{width:10px;height:10px;border-radius:3px;background:var(--hl-yellow);border:2px solid var(--ink);flex:none;margin-top:.5em}
+  p{margin-bottom:12px}
+  .callout{background:var(--sunken);border:2px solid var(--ink);border-radius:var(--radius);padding:14px 16px;margin:14px 0}
+  .btn{
+    display:inline-block;background:var(--hl-yellow);color:var(--ink);border:2px solid var(--ink);
+    border-radius:var(--radius);padding:10px 20px;font-weight:700;text-decoration:none;margin:6px 0 10px;
+  }
+  dl.faq dt{font-weight:700;margin-top:20px}
+  dl.faq dd{margin:6px 0 0;color:var(--muted)}
+  a{color:var(--ink);text-decoration-color:var(--hl-pink);text-decoration-thickness:2px}
+  .btn{text-decoration:none}
+  footer{margin-top:48px;padding-top:20px;border-top:2.5px solid var(--ink);color:var(--muted);font-size:13.5px}
+  footer p{margin-bottom:4px}
+  section.i18n[hidden]{display:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="site">
+    <div class="brand">
+      <a href="./" aria-label="PaiJi">
+        <svg width="40" height="40" viewBox="0 0 40 40" role="img" aria-label="拍記 PaiJi">
+          <rect x="1.5" y="1.5" width="37" height="37" rx="9" fill="#FFFDF5" stroke="#17181C" stroke-width="2.5"/>
+          <path d="M8 14 h18" stroke="#FFE94A" stroke-width="5" stroke-linecap="round"/>
+          <path d="M8 21 h24" stroke="#FFB8D4" stroke-width="5" stroke-linecap="round"/>
+          <path d="M8 28 h14" stroke="#C4F27D" stroke-width="5" stroke-linecap="round"/>
+        </svg>
+        <div>
+          <div class="name">拍記 PaiJi</div>
+          <div class="by">by Lin Jing-Hung 林靖閎</div>
+        </div>
+      </a>
+    </div>
+    <nav class="lang" aria-label="Language">
+      <button type="button" data-lang="zh" aria-pressed="true">繁體中文</button>
+      <button type="button" data-lang="en" aria-pressed="false">English</button>
+    </nav>
+  </header>
+
+<!-- ===================== 繁體中文 ===================== -->
+<section class="i18n" id="sec-zh" lang="zh-Hant">
+<nav class="docs" aria-label="Documents"><a href="privacy.html">隱私權政策</a><a href="terms.html">服務條款</a><a href="support.html" aria-current="page">支援</a></nav>
+<h1><mark>支援與常見問題</mark></h1>
+<p class="lede">使用拍記遇到問題，或有建議想告訴我們？歡迎來信，我們會盡快回覆。</p>
+
+<h2><span class="tick" aria-hidden="true"></span><span>聯絡我們</span></h2>
+<div class="callout">
+<p>請寄信至 <a href="mailto:loopapp18@gmail.com">loopapp18@gmail.com</a>，說明你的裝置機型、iOS 版本與問題狀況（若是轉換問題，可附上該頁筆記的照片），方便我們排查。</p>
+<a class="btn" href="mailto:loopapp18@gmail.com?subject=%E6%8B%8D%E8%A8%98%20PaiJi%20%E6%94%AF%E6%8F%B4">寄信聯絡支援</a>
+</div>
+
+<h2><span class="tick" aria-hidden="true"></span><span>常見問題</span></h2>
+<dl class="faq">
+<dt>轉換失敗或一直轉圈怎麼辦？</dt>
+<dd>請先確認網路連線後，於錯誤畫面點「重試」。整頁筆記的轉換通常需要 10–30 秒，內容較多時會久一些。若持續失敗，歡迎來信回報。</dd>
+<dt>轉換結果有錯字或漏字？</dt>
+<dd>AI 辨識手寫字可能出錯，重要內容請對照原稿核對。可於設定切換「忠實保留／自動修正筆誤」兩種模式；字跡清晰、光線充足的照片辨識率最好。</dd>
+<dt>免費額度怎麼計算？</dt>
+<dd>免費方案每月可轉換 5 頁，每月自動重置；只有「轉換成功」才會扣減額度。拍記 Pro 為每月 80 頁（公平使用上限）。</dd>
+<dt>訂閱扣款了但 Pro 沒有解鎖？</dt>
+<dd>請到「設定 → 恢復購買」重新同步一次。若仍未解鎖，來信並附上 App Store 購買收據，我們協助排查。</dd>
+<dt>如何取消訂閱？</dt>
+<dd>訂閱由 App Store 代收代付：請至 iOS「設定 → Apple 帳戶 → 訂閱」管理或取消，拍記本身無法代為取消。</dd>
+<dt>Notion 同步失敗或找不到資料庫？</dt>
+<dd>同步需要你的 Notion 中先有至少一個資料庫（database），並在授權時把它分享給拍記。可在設定中中斷後重新連接 Notion 再試。</dd>
+<dt>我的筆記存在哪裡？換手機會不見嗎？</dt>
+<dd>筆記與原稿照片只儲存在你的手機本機，我們沒有雲端副本。刪除 App 或換手機前，請先把重要筆記同步到 Notion 或自行備份。</dd>
+</dl>
+</section>
+
+<!-- ===================== English ===================== -->
+<section class="i18n" id="sec-en" lang="en" hidden>
+<nav class="docs" aria-label="Documents"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="support.html" aria-current="page">Support</a></nav>
+<h1><mark>Support &amp; FAQ</mark></h1>
+<p class="lede">Having trouble with PaiJi, or want to share feedback? Email us and we will get back to you as soon as we can.</p>
+
+<h2><span class="tick" aria-hidden="true"></span><span>Contact us</span></h2>
+<div class="callout">
+<p>Email <a href="mailto:loopapp18@gmail.com">loopapp18@gmail.com</a> with your device model, iOS version and a description of the issue (for conversion issues, attaching the note photo helps).</p>
+<a class="btn" href="mailto:loopapp18@gmail.com?subject=PaiJi%20Support">Email support</a>
+</div>
+
+<h2><span class="tick" aria-hidden="true"></span><span>FAQ</span></h2>
+<dl class="faq">
+<dt>Conversion fails or keeps spinning?</dt>
+<dd>Check your network connection and tap “Retry” on the error screen. A full page usually takes 10–30 seconds, longer for dense notes. If it keeps failing, email us.</dd>
+<dt>Typos or missing words in results?</dt>
+<dd>AI recognition of handwriting can make mistakes — always verify important content against the original. You can switch between “faithful transcription” and “auto-correct” in Settings; clear handwriting and good lighting give the best results.</dd>
+<dt>How does the free quota work?</dt>
+<dd>The free plan converts 5 pages per month, resetting monthly; quota is only deducted when a conversion succeeds. PaiJi Pro offers 80 pages per month (fair-use cap).</dd>
+<dt>Charged but Pro is not unlocked?</dt>
+<dd>Go to Settings → Restore Purchases to re-sync. If it is still locked, email us with your App Store receipt and we will help.</dd>
+<dt>How do I cancel my subscription?</dt>
+<dd>Subscriptions are billed by the App Store: manage or cancel in iOS Settings → Apple Account → Subscriptions. PaiJi cannot cancel it on your behalf.</dd>
+<dt>Notion sync fails or no database found?</dt>
+<dd>Sync requires at least one database in your Notion, shared with PaiJi during authorisation. Try disconnecting and reconnecting Notion in Settings.</dd>
+<dt>Where are my notes stored? Will I lose them on a new phone?</dt>
+<dd>Notes and original photos are stored only on your device — we keep no cloud copy. Before deleting the App or switching phones, sync important notes to Notion or back them up yourself.</dd>
+</dl>
+</section>
+
+  <footer>
+    <p>拍記 PaiJi — 開發者 Developer: Lin Jing-Hung（林靖閎）</p>
+    <p>聯絡 Contact: <a href="mailto:loopapp18@gmail.com">loopapp18@gmail.com</a></p>
+  </footer>
+</div>
+
+<script>
+(function(){
+  var btns = document.querySelectorAll('.lang button');
+  var secs = { zh: document.getElementById('sec-zh'), en: document.getElementById('sec-en') };
+  function show(lang){
+    Object.keys(secs).forEach(function(k){ secs[k].hidden = (k !== lang); });
+    btns.forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.lang === lang)); });
+    document.documentElement.lang = lang === 'zh' ? 'zh-Hant' : lang;
+  }
+  btns.forEach(function(b){ b.addEventListener('click', function(){ show(b.dataset.lang); }); });
+  var nav = (navigator.language || 'zh').toLowerCase();
+  if (nav.indexOf('zh') === 0) show('zh'); else show('en');
+})();
+</script>
+
+</body>
+</html>
